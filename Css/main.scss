@@ -11,6 +11,7 @@ $seCol:#1c6cae;
 }
 body{
    background:white;
+   transition: 0.5s;
    
    color:$mainCol;
    font-family: 'Montserrat', sans-serif;
@@ -30,6 +31,7 @@ main{
   
    
    .static{
+      
       align-content: center;
       margin:0px 50px;
       max-width:40%;
@@ -55,7 +57,7 @@ main{
             padding:20px 0px;
             font-size:14px;
             span{
-               color:#84218d;
+               color:orange;
                
             }
          }
@@ -105,21 +107,22 @@ main{
          margin: 0 40px;
          nav{
             ul{
+               display:flex;
                li{
                   list-style-type:none;
                   text-align: center;
                   padding: 2px 25px;
                   font-size:16px;
                   // transition:5s ease-in;
-                  display:inline;
+                 
                   &:hover{
                      // color:#1c6cae;
-                     font-size:17px;
+                     font-size:16px;
                      cursor: pointer;
                    
                   }
                   &:nth-child(1){
-                     border-bottom:3px solid #1c6cae; font-weight:400;
+                     border-bottom:3px solid rgb(241, 146, 233); font-weight:400;
                    }
                }
             }
@@ -129,9 +132,8 @@ main{
          background-size: cover;
          border-radius:9px;
          margin:30px 0px;
+        transition: 1s;
          height:90%;
-        
-         // box-shadow:5px 7px 15px grey;
 
          .container{
             padding:40px 40px;
@@ -194,6 +196,21 @@ main{
               width:100%;
               border-radius:0px;
               box-shadow:2px 3px 6px rgb(214, 212, 212);
+              p{
+                 font-size:14px;
+                 padding:5px 0px;
+              }
+              .stack{
+                 margin:5px 0px;
+                 code{
+                    ul{
+                       li{
+                          display:inline;padding:4px;
+                          color:rgb(241, 146, 233);
+                       }
+                    }
+                 }
+              }
             }
          }  
 

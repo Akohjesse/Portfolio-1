@@ -11,6 +11,8 @@
 
 body {
   background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
   color: #161616;
   font-family: 'Montserrat', sans-serif;
 }
@@ -59,7 +61,7 @@ main {
 }
 
 .section .static .portText .intro span {
-  color: #84218d;
+  color: orange;
 }
 
 .section .static .portText .sList {
@@ -111,21 +113,26 @@ main {
   margin: 0 40px;
 }
 
+.section .dynamic header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .section .dynamic header nav ul li {
   list-style-type: none;
   text-align: center;
   padding: 2px 25px;
   font-size: 16px;
-  display: inline;
 }
 
 .section .dynamic header nav ul li:hover {
-  font-size: 17px;
+  font-size: 16px;
   cursor: pointer;
 }
 
 .section .dynamic header nav ul li:nth-child(1) {
-  border-bottom: 3px solid #1c6cae;
+  border-bottom: 3px solid #f192e9;
   font-weight: 400;
 }
 
@@ -133,6 +140,8 @@ main {
   background-size: cover;
   border-radius: 9px;
   margin: 30px 0px;
+  -webkit-transition: 1s;
+  transition: 1s;
   height: 90%;
 }
 
@@ -197,6 +206,21 @@ main {
   border-radius: 0px;
   -webkit-box-shadow: 2px 3px 6px #d6d4d4;
           box-shadow: 2px 3px 6px #d6d4d4;
+}
+
+.section .dynamic .blob .projects .project-child p {
+  font-size: 14px;
+  padding: 5px 0px;
+}
+
+.section .dynamic .blob .projects .project-child .stack {
+  margin: 5px 0px;
+}
+
+.section .dynamic .blob .projects .project-child .stack code ul li {
+  display: inline;
+  padding: 4px;
+  color: #f192e9;
 }
 
 .section .dynamic .blob .article-set {

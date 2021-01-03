@@ -3,11 +3,11 @@
 <head>
            <meta charset="UTF-8">
            <meta name="Author" content="Akoh Jesse" >
-           <meta name="description" content="Welcome to Zirra's Corner on the Internet">
+           <meta name="description" content="Meet Jesse Akoh, a FrontEnd Developer from Nigeria">
            <meta name='apple-touch-fullscreen' content='yes'>
            <meta name='target' content='all'>
            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-           <title>S.Zirra</title>
+           <title>Jesse Akoh</title>
            <link rel="stylesheet" href="Css/main.css">
            <link rel="stylesheet" href="Css/Ast.css">
            
@@ -35,7 +35,7 @@
 
                <div class="avartar animate__animated animate__bounce animate__infinite">
                   <!-- Insert the Avartar of Bitmoji or Image -->
-                  <img src="images/stolen_afro.png" alt="">
+                  <img id="avartar" src="images/stolen_afro.png" alt="">
                </div>
 
 
@@ -44,7 +44,12 @@
 
                   <h1 class="animate__animated animate__delay-0.5s  animate__zoomInLeft">Hi! I'm Jesse</h1>
                   <div class="intro">
-                     <p>I'm a <span>FrontEnd developer</span>, i'm mostly found building user friendly aesthetic applications and websites <span>using Javascript.</span><br><span class="unortho">A nutshell of what i do~</span></p>
+                      <p>I'm a
+                         <span>FrontEnd developer</span>, 
+                         i'm mostly found building user friendly aesthetic applications and websites
+                          <span>using Javascript.</span><br>
+                          <span >A nutshell of what i do~</span>
+                       </p>
                   </div>
 
                   <div class="sList">
@@ -57,7 +62,7 @@
                   
                    <!-- Beginning of the more text hypertext markup for the static page of the website -->
                   <div class="moreTxt">
-                     <p>I also am a big fan of the NBA 🏀, and i love Semovita
+                     <p>I , and i love <span class="jam-up">Music</span>
                         
                       
                      </p>
@@ -70,13 +75,13 @@
                   <div class="links">
                       <a target="_blank" href="mailto:akohgodwinjesse@gmail.com"><i style="color:#e62b2b;" class="far fa-envelope"></i></a>
                       <a target="_blank" href="https://twitter.com/jesseakoh"><i  style="color:#1c6cae;" class="fab fa-twitter-square"></i></a> 
-                      <a target="_blank" href="https://github.com/Akohjesse"> <i style="color:#000000;" class="fab fa-github"></i></a> 
-                      <a target="_blank" href="https://dev.to/jesseakoh"><i style="color:#1a1a1a;" class="fab fa-dev"></i></a> 
+                      <a target="_blank" href="https://github.com/Akohjesse"> <i class="fab fa-github"></i></a> 
+                      <a target="_blank" href="https://dev.to/jesseakoh"></a><i  class="fab fa-dev"></i></a> 
                      
                   </div>
                   
                   <div class="credits">
-                    <p>Developed by <a target="_blank" href="https://twitter.com/Jesseakoh">Fervent</a></p>
+                    <p>Developed by <a target="_blank" href="https://twitter.com/Jesseakoh">me</a></p>
                   </div>
                </footer>
             </div>
@@ -88,9 +93,8 @@
                      <ul>
                         <li id="skill">SKILLS</li>
                         <li id="project" >PROJECTS</li>
-                        <!-- <li id="designs">DESIGNS</li> -->
-                        <li id="articles">ARTICLES</li>
-                        <li class="redriding"><a><i class="fas fa-arrow-circle-right"></i> Resume</a></li>
+                        <li id="articles"><a href="https://dev.to/jesseakoh" target="_blank">ARTICLES</a></li>
+                        <li ><a class="redriding" href=""><i class="fas fa-arrow-circle-right"></i> Resume</a></li>
                      </ul>
                   </nav>
                </header>
@@ -124,15 +128,11 @@
                                  <li>Animate Css</li>
                                  <li>Bootstrap</li>
                                  <li>Figma</li>
-                                  <br>
                                   <li>Git/GitHub</li>
+                                  <li>Gsap</li>
                                   <li>Jade</li>
                                   <li>JQuery</li>
                                   <li>Mongoose</li>
-                                 
-                                  
-                                  <br>
-                           
                                    <li>Skeleton</li> 
                                    <li>SASS</li>
                                    <li>SQL</li>
@@ -148,95 +148,148 @@
                      </div>
 
                       <!-- the div class for the Projects container -->
-                     <div class="projects">
+                     <div class="projects  animate__animated   animate__flipInY">
                         <!-- projects child -->
-                        <div class="project-child">
-                           <h4>Project Name</h4>
-                           <p>Project info (small words)</p>
+                      
 
+                        <div class="project-child">
+                           <h4>Sars Xenzia</h4>
+                           <p>A rip off Nokia's Snake Xenzia, built with Python and with Sars as the antagonist (the snake)</p>
+                            
+                           <div class="stack">
+                              <code>
+                                 <ul>
+                                    <li>Python</li>
+                                 </ul>
+                              </code>
+                           </div>
+                           <div class="view">
+                               <i class="fab fa-github"></i>
+                           </div>
+                        </div>
+
+                        <div class="project-child">
+                           <h4>Pineapple</h4>
+                           <p>A simple landing page for a fictional online fashion retail brand.</p>
+                           <div class="stack">
+                              <code>
+                                 <ul>
+                                    <li>Html/SASS</li>
+                                    <li>Gsap</li>
+                                    <li>Javascript</li>
+                                 </ul>
+                              </code>
+                           </div>
+                           <div class="view">
+                              <i class="fab fa-github"></i>
+                           </div>
+                        </div>
+
+                        <div class="project-child">
+                           <h4>QuakerPam</h4>
+                           <p>A one paged site for project crowdfunding</p>
+
+                           <div class="stack">
+                              <code>
+                                 <ul>
+                                    <li>Html/SASS</li>
+                                 </ul>
+                              </code>
+                           </div>
+                           <div class="view">
+                              <i class="fab fa-github"></i>
+                           </div>
+                        </div>
+
+                        <div class="project-child">
+                           <h4>BESA</h4>
+                           <p>Official website for the Biomedical Engineering Student association of ABUAD university</p>
+                           <div class="stack">
+                              <code>
+                                 <ul>
+                                    <li>Html&SCSS</li>
+                                    <li>Animate</li>
+                                    <li>Javascript</li>
+                                 </ul>
+                              </code>
+                           </div>
+                           <div class="view">
+                              <i class="fab fa-github"></i>
+                           </div>
+                        </div>
+
+                        <div class="project-child">
+                           <h4>Orion</h4>
+                           <p>A Landing page for a fictional lifestyle tech brand</p>
+                           <div class="stack">
+                              <code>
+                                 <ul>
+                                    <li>Html/SaSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Animate</li>
+                                 </ul>
+                              </code>
+                           </div>
                            <div class="view"></div>
                         </div>
 
                         <div class="project-child">
-                           <h4>Project Name</h4>
-                           <p>Project info (small words)</p>
-
-                           <div class="view"></div>
+                           <h4>Task List</h4>
+                           <p>A simple Task list app, built with aid of the browser Local storage.</p>
+                           <div class="stack">
+                              <code>
+                                 <ul>
+                                    <li>Javascript</li>
+                                 </ul>
+                              </code>
+                           </div>
+                           <div class="view">
+                              <i class="fab fa-github"></i>
+                           </div>
                         </div>
 
                         <div class="project-child">
-                           <h4>Project Name</h4>
-                           <p>Project info (small words)</p>
-
-                           <div class="view"></div>
+                            <h4>Drum Kit</h4>
+                              <p>A simple drum kit app</p>
+                         <div class="stack">
+                              <code>
+                                    <ul>
+                                       <li>JavaScript</li>
+                                    </ul>
+                              </code>
+                         </div>
+                         <div class="view">
+                           <i class="fab fa-github"></i>
+                         </div>
                         </div>
 
                         <div class="project-child">
-                           <h4>Project Name</h4>
-                           <p>Project info (small words)</p>
-
-                           <div class="view"></div>
+                           <h4>Animations</h4>
+                             <p>A Github repository of my Css animations</p>
+                        <div class="stack">
+                             <code>
+                                   <ul>
+                                      <li>Css</li>
+                                   </ul>
+                             </code>
                         </div>
-
-                        <div class="project-child">
-                           <h4>Project Name</h4>
-                           <p>Project info (small words)</p>
-
-                           <div class="view"></div>
+                        <div class="view">
+                           <i class="fab fa-github"></i>
                         </div>
-
-                        <div class="project-child">
-                           <h4>Project Name</h4>
-                           <p>Project info (small words)</p>
-
-                           <div class="view"></div>
-                        </div>
-
-                        <div class="project-child">
-                           <h4>Project Name</h4>
-                           <p>Project info (small words)</p>
-
-                           <div class="view"></div>
-                        </div>
-
-                        <div class="project-child">
-                           <h4>Project Name</h4>
-                           <p>Project info (small words)</p>
-
-                           <div class="view"></div>
-                        </div>
-
+                       </div>
                       
                      </div>
 
-
-
-                     <div class="article-set">
-                        <div class="post">
-                           <h4>Title</h4>
-                        </div>
-
-                        <div class="post">
-                           <h4>Title</h4>
-                        </div>
-
-                        <div class="post">
-                           <h4>Title</h4>
-                        </div>
-                        <div class="post">
-                           <h4>Title</h4>
-                        </div>
-                     </div>
-                    
-                     <script src="Js/app.js"></script>
-
-                  </div>
                  
                </div>
             </div>
          </div>
       </main>
-      <div class="moon"></div>
-     <div class="divelyn"></div>
+      <div class="moon">
+         <i  id="green"  class="fas fa-cloud-sun animate__animated animate__fadeInDown "></i>
+      </div>
+
+      <script src="Js/app.js"></script>
+     
 </body>
 </html>

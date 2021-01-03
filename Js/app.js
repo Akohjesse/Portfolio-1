@@ -3,76 +3,133 @@
 var projectBtn = document.getElementById("project");
 var skillBtn = document.getElementById("skill");
 var designBtn = document.getElementById("designs");
-var articleBtn= document.getElementById("articles");
 
-
+const blob = document.getElementsByClassName("blob")[0];
 var static = document.querySelector(".static");
-
 var skillSet= document.querySelector(".skill-set");
 var projects = document.querySelector(".projects");
-var articles = document.getElementsByClassName("article-set")[0];
+
+
 
 projectBtn.addEventListener("click", function showProject(){
     skillSet.style="display:none";
     projects.style="display:grid";
     skillBtn.style="border-bottom:none;";
-    articleBtn.style="";
-    projectBtn.style=" border-bottom:3px solid #1c6cae; font-weight:400;";
-    articles.style="display:none;";
+  
+    projectBtn.style=" border-bottom:3px solid rgb(241, 146, 233); font-weight:400;";
+   
+    
 })
 
 skillBtn.addEventListener("click", function showSkill(){
-    skillSet.style="display:block";
-    projects.style="display:none";
-    articleBtn.style="";
-    skillBtn.style=" border-bottom:3px solid #1c6cae; font-weight:400;";
-    projectBtn.style="";
-    articles.style="display:none;";
-} )
-articleBtn.addEventListener("click", function showArticle(){
-    skillSet.style="display:none;";
-    projects.style= "display:none";
-    articles.style="display:grid";
-    projectBtn.style="";
-    skillBtn.style="border-bottom:none;";
-    articleBtn.style="border-bottom:3px solid #1c6cae; font-weight:400;";
- 
+    skillSet.classList.add("animate__animated" , "animate__zoomIn");
 
-})
+    skillSet.style="display:block";
+   
+    projects.style="display:none";
+ 
+    skillBtn.style=" border-bottom:3px solid rgb(241, 146, 233); font-weight:400;";
+    projectBtn.style="";
+   
+} )
+
+
+
 
 //darkMode Code
 
 var toggleDark = document.getElementById("green");
 var body = document.getElementsByTagName("body")[0];
-var blob = document.getElementsByClassName("blob")[0];
 var projectChild = document.querySelectorAll(".project-child").length;
 var articlePost = document.querySelectorAll(".post").length;
 var flag = true;
+var divette = document.querySelector(".divette");
+
 
 toggleDark.addEventListener("click", function(){
     if (flag){
-        body.style="background:#161616; color:white;";
-        blob.style="background:#202020; color:white;";
+        body.style="background:#161616; color:white; transition: 1.3s;";
+        blob.style="color:white;";
+        toggleDark.className="fas fa-moon animate__animated animate__fadeInUp animate__slow";
+        toggleDark.style="color:#f7f159; transform:rotateZ(320deg)";
+        divette.style="background-color:rgb(4,4,4);";
+        document.querySelectorAll(".portText .intro p span").forEach(function(individual){
+             individual.style="color:rgb(241, 146, 233)";
+            })
+        document.querySelector(".jam-up").style.color="rgb(241, 146, 233)";
+
+
+
+        document.querySelectorAll(".stack code ul li").forEach(function(item){
+              item.style="color:orange";
+        })
+
         for (i=0; i< projectChild; i++){
-            document.querySelectorAll(".project-child")[i].style="box-shadow:3px 3px 9px #161616";
-      };
-      for (i=0; i< articlePost; i++){
-        document.querySelectorAll(".post")[i].style="box-shadow:3px 3px 9px #161616";
-  };
+            document.querySelectorAll(".project-child")[i].style="box-shadow: rgb(4 4 4) 2px 1px 6px 1px";
+        };
+        
         
     }
     else{
         body.style="background:white";
-        blob.style="background:white";
+        blob.style="background:white;";
+        divette.style="background-color: rgb(241, 146, 233)";
+        toggleDark.className="fas fa-cloud-sun animate__animated animate__fadeInDown";
+        toggleDark.style="color:orange; transform:rotateZ(320deg)";
+        document.querySelectorAll(".portText .intro p span").forEach(function(individual){
+            individual.style="color:orange";
+        })
+
+        document.querySelectorAll(".stack code ul li").forEach(function(item){
+            item.style="color:rgb(241, 146, 233)";
+      })
+
         for (i=0; i< projectChild; i++){
             document.querySelectorAll(".project-child")[i].style="box-shadow:2px 3px 6px rgb(214, 212, 212)";
       };
       for (i=0; i< articlePost; i++){
         document.querySelectorAll(".post")[i].style="box-shadow:2px 3px 6px rgb(214, 212, 212)";
-  };
+     };
         
     }
     flag = !flag;
 })
+
+
+
+
+
+changeJamUpContent();
+
+function changeJamUpContent(){
+    var jamUpList = ["Music🎤", "Jazz🎺", "Funk🎷", "AfroSoul🍂", "Highlife🌴" ,"SnarkyPuppy🎸" ];
+    var jamUp = document.querySelector(".jam-up");
+    var counter = 0;
+    var flag = true;
+    var myself = new Audio('Additives/myself.mp3');
+    setInterval(cjmp,500); 
+    function cjmp () {
+   
+        jamUp.innerText=jamUpList[counter];
+        counter++;
+        if (counter >= jamUpList.length){
+            counter=0;
+        }
+    }
+    jamUp.addEventListener("click", function(){
+  
+        if (flag){
+            myself.play();
+            console.log("i dot");
+        }
+        else{
+            myself.pause();   
+            console.log("i dgsbssddot");
+        }
+        flag =!flag;
+    })
+   
+
+}
 
 
