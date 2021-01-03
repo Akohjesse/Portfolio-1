@@ -205,10 +205,17 @@ main{
                  code{
                     ul{
                        li{
-                          display:inline;padding:4px;
+                          display:inline;
+                          padding:4px;
                           color:rgb(241, 146, 233);
                        }
                     }
+                 }
+              }
+              .view{
+                 a{
+                    padding:5px 6px;
+                    color:$mainCol;
                  }
               }
             }

@@ -67,7 +67,9 @@ toggleDark.addEventListener("click", function(){
         for (i=0; i< projectChild; i++){
             document.querySelectorAll(".project-child")[i].style="box-shadow: rgb(4 4 4) 2px 1px 6px 1px";
         };
-        
+        document.querySelectorAll(".view a").forEach(function(item){
+            item.style.color="white";
+        })
         
     }
     else{
@@ -90,6 +92,12 @@ toggleDark.addEventListener("click", function(){
       for (i=0; i< articlePost; i++){
         document.querySelectorAll(".post")[i].style="box-shadow:2px 3px 6px rgb(214, 212, 212)";
      };
+
+
+     document.querySelectorAll(".view a").forEach(function(item){
+        item.style.color="#161616";
+    })
+        
         
     }
     flag = !flag;

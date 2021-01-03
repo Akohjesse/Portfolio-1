@@ -168,6 +168,10 @@ main {
   padding: 4px;
   color: #f192e9;
 }
+.section .dynamic .blob .projects .project-child .view a {
+  padding: 5px 6px;
+  color: #161616;
+}
 .section .dynamic .blob .article-set {
   display: none;
   grid-auto-rows: minmax(150px, auto);
