@@ -271,6 +271,7 @@ main {
     font-size: 12px;
   }
 }
+@media (min-width: 768px) and (max-width: 800px) {
   .section .static {
     width: 70%;
     margin: 0px 35px;
