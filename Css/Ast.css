@@ -10,7 +10,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
  }
 .moon{
     position: absolute;
-    top:25%;
+    top:15%;
     left:30%;
 }
 .moon i{
@@ -34,4 +34,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
  .jam-up{
      color:orange;
      cursor:pointer;
+ }
+
+ @media (max-width:1080px){
+    .moon{
+        position: absolute;
+        top:15%;
+        left:35%;
+     }
+     .moon i{
+         font-size:50px;
+         color:orange;
+     }
  }

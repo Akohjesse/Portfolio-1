@@ -81,7 +81,7 @@ toggleDark.addEventListener("click", function(){
         document.querySelectorAll(".portText .intro p span").forEach(function(individual){
             individual.style="color:orange";
         })
-
+        document.querySelector(".jam-up").style.color="orange";
         document.querySelectorAll(".stack code ul li").forEach(function(item){
             item.style="color:rgb(241, 146, 233)";
       })

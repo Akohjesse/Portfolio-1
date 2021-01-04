@@ -183,3 +183,91 @@ main {
   padding: 9px;
   border-radius: 1px;
 }
+
+@media (max-width: 1080px) {
+  main {
+    margin: 35px 25px;
+    padding: 25px;
+  }
+
+  .section .dynamic header nav ul li {
+    padding: 2px 19px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 989px) {
+  .section .static {
+    width: 60%;
+    margin: 0px 40px;
+  }
+  .section .static .portText h1 {
+    padding: 10px 0px;
+    font-size: 1.8em;
+  }
+  .section .dynamic header nav ul li {
+    padding: 2px 15px;
+    font-size: 14px;
+  }
+  .section .dynamic header nav ul li:hover {
+    font-size: 14px;
+  }
+  .section .dynamic header .blob {
+    margin: 24px 0px;
+  }
+  .section .dynamic header .blob .container {
+    padding: 30px 30px;
+  }
+
+  .section .static .portText .intro {
+    line-height: 20px;
+    font-size: 14px;
+  }
+
+  .section .dynamic .blob .container .skills .skLi ul li {
+    padding: 13px;
+    font-size: 14px;
+  }
+
+  .section .dynamic .blob .container .tools .toLi ul li {
+    font-size: 13px;
+  }
+}
+@media (max-width: 860px) {
+  .section .static {
+    width: 70%;
+    margin: 0px 40px;
+  }
+  .section .static .portText h1 {
+    padding: 10px 0px;
+    font-size: 1.6em;
+  }
+  .section .dynamic header nav ul li {
+    padding: 2px 10px;
+    font-size: 13px;
+  }
+  .section .dynamic header nav ul li:hover {
+    font-size: 13px;
+  }
+  .section .dynamic header .blob {
+    margin: 20px 0px;
+  }
+  .section .dynamic header .blob .container {
+    padding: 20px 20px;
+  }
+
+  .section .static .portText .intro {
+    line-height: 20px;
+  }
+
+  .section .static .portText .sList {
+    font-size: 13px;
+  }
+
+  .section .static .portText .moreTxt {
+    font-size: 13px;
+  }
+
+  .section .static footer .credits p {
+    font-size: 12px;
+  }
+}
