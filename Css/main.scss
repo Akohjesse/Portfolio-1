@@ -24,6 +24,27 @@ main{
    padding:30px;
   
 }
+.menu-bar{
+   width:100%;
+   height:100vh;
+   top:0%;
+   position:fixed;
+   z-index:90;
+   color:white;
+   top:0;
+   display:none;
+   justify-items: center;
+   justify-content: center;
+   background:rgb(72, 26, 72);
+   ul{
+      margin:30%;
+     li{
+        list-style-type: none;
+        font-size:1.3em;
+        margin:30px;
+     }
+   }
+}
 .section{
    display:flex;
    justify-content: space-evenly;
@@ -417,7 +438,7 @@ main{
 }
 @media (max-width:765px){
    body{
-      overflow-y:hidden;
+      overflow-x:hidden;
    }
    main{
       margin:25px 20px;
