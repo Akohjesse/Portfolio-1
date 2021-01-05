@@ -167,3 +167,23 @@ function changeJamUpContent(){
 }
 
 
+//menu button on click
+var toggleNav= document.querySelector(".ri-menu-3-fill").addEventListener("click", openMenu);
+ var jesse = true;
+function openMenu(){
+    if (jesse){
+        var menuBar = document.querySelector(".menu-bar");
+    menuBar.style.display= "flex";
+    this.style="color:white";
+    this.className= "ri-close-line";
+    }
+    else{
+        var menuBar = document.querySelector(".menu-bar");
+        menuBar.style= "display:none;";
+        this.style="color:black";
+        this.className= "ri-menu-3-fill";  
+    }
+    jesse = !jesse;
+
+}
+
