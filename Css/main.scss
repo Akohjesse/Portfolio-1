@@ -34,16 +34,28 @@ main{
    color:white;
    top:0;
    display:none;
-   justify-items: center;
-   justify-content: center;
+   flex-direction:column;
    background:rgb(72, 26, 72);
    ul{
-      margin:30%;
+      align-self:center;
+      margin:10%;
      li{
         list-style-type: none;
         font-size:1.3em;
         margin:30px;
+        &:hover{
+           color:orange;
+        }
      }
+   }
+   .socials{
+      display:inline-flex;
+      margin:8%;
+      align-self:center;
+      i{
+         font-size:1.5em;
+         padding:0px 10px;
+      }
    }
 }
 .section{

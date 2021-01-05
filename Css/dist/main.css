@@ -30,17 +30,29 @@ main {
   color: white;
   top: 0;
   display: none;
-  justify-items: center;
-  justify-content: center;
+  flex-direction: column;
   background: #481a48;
 }
 .menu-bar ul {
-  margin: 30%;
+  align-self: center;
+  margin: 10%;
 }
 .menu-bar ul li {
   list-style-type: none;
   font-size: 1.3em;
   margin: 30px;
+}
+.menu-bar ul li:hover {
+  color: orange;
+}
+.menu-bar .socials {
+  display: inline-flex;
+  margin: 8%;
+  align-self: center;
+}
+.menu-bar .socials i {
+  font-size: 1.5em;
+  padding: 0px 10px;
 }
 
 .section {
