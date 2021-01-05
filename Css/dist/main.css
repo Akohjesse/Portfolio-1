@@ -309,6 +309,15 @@ main {
   .section .static footer .credits p {
     font-size: 12px;
   }
+
+  .section .dynamic .blob .projects .project-child h4 {
+    font-size: 15px;
+  }
+
+  .section .dynamic .blob .projects .project-child p {
+    font-size: 13px;
+    padding: 5px 0px;
+  }
 }
 @media (max-width: 765px) {
   main {
@@ -351,5 +360,45 @@ main {
 
   .section .static footer .credits p {
     font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .section .static .avartar {
+    width: auto;
+  }
+
+  .section .static .portText {
+    font-size: 15px;
+  }
+
+  .section .static .portText .intro {
+    font-size: 1em;
+  }
+
+  .section .static .portText .moreTxt {
+    font-size: 14px;
+  }
+
+  .section .static .portText .sList {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  main {
+    margin: 20px 10px;
+    padding: 10px;
+  }
+
+  .section .static footer .links {
+    padding: 10px;
+    font-size: 1.2em;
+    margin: 20px 0px;
+  }
+
+  .section .static footer .credits {
+    margin: 20px 0px;
+  }
+  .section .static footer .credits p {
+    font-size: 13px;
   }
 }
