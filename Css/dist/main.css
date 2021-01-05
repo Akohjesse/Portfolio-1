@@ -311,11 +311,11 @@ main {
   }
 
   .section .dynamic .blob .projects .project-child h4 {
-    font-size: 15px;
+    font-size: 14px;
   }
 
   .section .dynamic .blob .projects .project-child p {
-    font-size: 13px;
+    font-size: 12px;
     padding: 5px 0px;
   }
 }
