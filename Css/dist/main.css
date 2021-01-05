@@ -320,6 +320,10 @@ main {
   }
 }
 @media (max-width: 765px) {
+  body {
+    overflow-y: hidden;
+  }
+
   main {
     margin: 25px 20px;
     padding: 15px;

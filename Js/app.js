@@ -1,4 +1,30 @@
 // declaring variables
+this.addEventListener("load", preloader);
+
+function preloader(){
+    var loader = document.querySelector(".loader");
+    setTimeout(5000, del());
+    function del(){
+        loader.classList.add("animate__animated", "animate__slideOutLeft", "animate__delay-1s");
+    }
+
+    var loader2 = document.querySelector(".loader2");
+    setTimeout(5000, del2());
+    function del2(){
+        loader2.classList.add("animate__animated", "animate__slideOutUp", "animate__delay-4s");
+    }
+
+    var loader3 = document.querySelector(".loader3");
+    setTimeout(5000, del3());
+    function del3(){
+        loader3.classList.add("animate__animated", "animate__slideOutRight","animate__delay-2s" );
+    }
+}
+
+
+
+
+
 
 var projectBtn = document.getElementById("project");
 var skillBtn = document.getElementById("skill");
