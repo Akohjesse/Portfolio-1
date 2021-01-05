@@ -108,7 +108,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 
     .moon{
         position: absolute;
-        top:8%;
+        top:10%;
         left:75%;
      }
      .moon i{
@@ -130,7 +130,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
  @media (max-width:480px){
     .moon{
         position: absolute;
-        top:10%;
+        top:13%;
         left:75%;
  
      }
