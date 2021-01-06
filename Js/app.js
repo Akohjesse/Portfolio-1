@@ -17,7 +17,7 @@ function preloader(){
     var loader3 = document.querySelector(".loader3");
     setTimeout(5000, del3());
     function del3(){
-        loader3.classList.add("animate__animated", "animate__slideOutRight","animate__delay-2s" );
+        loader3.classList.add("animate__animated", "animate__slideOutRight","animate__delay-3s" );
     }
 }
 
@@ -174,18 +174,20 @@ var toggleNav= document.querySelectorAll(".ri-menu-3-fill")[0].addEventListener(
  var jesse = true;
 function openMenu(){
     if (jesse){
+        
         var menuBar = document.querySelector(".menu-bar");
     menuBar.style.display= "flex";
     this.style="color:white";
     this.className= "ri-close-line";
-    // document.querySelector(".logo").style.color="white";
+    document.querySelector(".logo").style.color="white";
     }
     else{
         var menuBar = document.querySelector(".menu-bar");
-        menuBar.style= "display:none;";
+        menuBar.classList.toggle("animate__fadeOutLeft")
+        menuBar.style.display="none";
         this.style="color:black";
         this.className= "ri-menu-3-fill";  
-        // document.querySelector(".logo").style.color="";
+        document.querySelector(".logo").style.color="";
     }
     jesse = !jesse;
 
@@ -193,9 +195,16 @@ function openMenu(){
 
 document.querySelector(".logo").addEventListener("click", function(){
     var menuBar = document.querySelector(".menu-bar");
-       
         menuBar.style= "display:none;";
         // document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
         document.querySelectorAll(".ri-close-line")[0].className= "ri-menu-3-fill";
         document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
+})
+document.getElementById("home_btn").addEventListener("click", function(){
+    var menuBar = document.querySelector(".menu-bar");
+       
+    menuBar.style= "display:none;";
+    // document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
+    document.querySelectorAll(".ri-close-line")[0].className= "ri-menu-3-fill";
+    document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
 })

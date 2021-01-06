@@ -127,12 +127,12 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
      .logo{
          font-size:1.2em;
          z-index:92;
-         transition:0.5s;
+         transition:ease-in 1s;
      }
       .menu{
         z-index:92;
          font-size:1.3em;
-         transition:0.5s;
+         transition: ease-in 2s;
          font-weight:600;
      }
  }
@@ -159,11 +159,11 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
      }
 
  }
- @media (max-height:600px){
+ /* @media (max-height:600px){
     .moon{
         position: absolute;
         top:17%;
         left:75%;
  
      } 
- }
+ } */

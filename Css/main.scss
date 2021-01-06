@@ -38,11 +38,15 @@ main{
    background:rgb(72, 26, 72);
    ul{
       align-self:center;
-      margin:10%;
+      margin:20%;
      li{
         list-style-type: none;
         font-size:1.3em;
         margin:30px;
+        a{
+           text-decoration: none;
+           color:inherit;
+        }
         &:hover{
            color:orange;
         }

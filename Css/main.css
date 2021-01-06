@@ -44,13 +44,18 @@ main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  margin: 10%;
+  margin: 20%;
 }
 
 .menu-bar ul li {
   list-style-type: none;
   font-size: 1.3em;
   margin: 30px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .menu-bar ul li:hover {
