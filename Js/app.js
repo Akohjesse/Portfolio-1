@@ -163,6 +163,7 @@ toggleDark.addEventListener("click", function(){
 
      document.querySelectorAll(".view a").forEach(function(item){
         item.style.color="#161616";
+        document.querySelectorAll(".ri-menu-3-fill")[0].style.color="";
     })
         
         
