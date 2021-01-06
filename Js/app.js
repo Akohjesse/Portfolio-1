@@ -23,8 +23,48 @@ function preloader(){
 
 
 
+//Nav Bar on click
+var  toggleNav= document.querySelectorAll(".ri-menu-3-fill")[0].addEventListener("click", openMenu);
+var jesse = true;
+function openMenu(){
+   if (jesse){
+       
+       var menuBar = document.querySelector(".menu-bar");
+   menuBar.style.display= "flex";
+   this.style="color:white";
+   this.className= "ri-close-line";
+   document.querySelector(".logo").style.color="white";
+   }
+   else{
+       var menuBar = document.querySelector(".menu-bar")
+       menuBar.style.display="none";
+       this.style="color:black";
+       this.className= "ri-menu-3-fill";  
+       document.querySelector(".logo").style.color="";
+   }
+   jesse = !jesse;
+
+}
+
+document.querySelector(".logo").addEventListener("click", function(){
+   var menuBar = document.querySelector(".menu-bar");
+       menuBar.style= "display:none;";
+       // document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
+       document.querySelectorAll(".ri-close-line")[0].className= "ri-menu-3-fill";
+       document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
+})
+document.getElementById("home_btn").addEventListener("click", function(){
+   var menuBar = document.querySelector(".menu-bar");
+      
+   menuBar.style= "display:none;";
+   // document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
+   document.querySelectorAll(".ri-close-line")[0].className= "ri-menu-3-fill";
+   document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
+})
 
 
+
+// nav bar in desktop mode
 
 var projectBtn = document.getElementById("project");
 var skillBtn = document.getElementById("skill");
@@ -97,6 +137,7 @@ toggleDark.addEventListener("click", function(){
             item.style.color="white";
         })
         
+        document.querySelectorAll(".ri-menu-3-fill")[0].style.color="white";
     }
     else{
         body.style="background:white";
@@ -131,6 +172,7 @@ toggleDark.addEventListener("click", function(){
 
 
 
+//manipulating the text in the more text field
 
 
 changeJamUpContent();
@@ -166,45 +208,3 @@ function changeJamUpContent(){
 
 }
 
-
-
-
-//menu button on click
-var toggleNav= document.querySelectorAll(".ri-menu-3-fill")[0].addEventListener("click", openMenu);
- var jesse = true;
-function openMenu(){
-    if (jesse){
-        
-        var menuBar = document.querySelector(".menu-bar");
-    menuBar.style.display= "flex";
-    this.style="color:white";
-    this.className= "ri-close-line";
-    document.querySelector(".logo").style.color="white";
-    }
-    else{
-        var menuBar = document.querySelector(".menu-bar");
-        menuBar.classList.toggle("animate__fadeOutLeft")
-        menuBar.style.display="none";
-        this.style="color:black";
-        this.className= "ri-menu-3-fill";  
-        document.querySelector(".logo").style.color="";
-    }
-    jesse = !jesse;
-
-}
-
-document.querySelector(".logo").addEventListener("click", function(){
-    var menuBar = document.querySelector(".menu-bar");
-        menuBar.style= "display:none;";
-        // document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
-        document.querySelectorAll(".ri-close-line")[0].className= "ri-menu-3-fill";
-        document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
-})
-document.getElementById("home_btn").addEventListener("click", function(){
-    var menuBar = document.querySelector(".menu-bar");
-       
-    menuBar.style= "display:none;";
-    // document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
-    document.querySelectorAll(".ri-close-line")[0].className= "ri-menu-3-fill";
-    document.querySelectorAll(".ri-menu-3-fill")[0].style="color:black";
-})
