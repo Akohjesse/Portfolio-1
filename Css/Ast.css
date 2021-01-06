@@ -127,7 +127,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
      .logo{
          font-size:1.5em;
          z-index:92;
-         transition:ease-in 1s;
+         transition:ease-in 0.3s;
      }
       .menu{
         z-index:92;

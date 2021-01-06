@@ -31,14 +31,14 @@ function openMenu(){
        
        var menuBar = document.querySelector(".menu-bar");
    menuBar.style.display= "flex";
-   this.style="color:white";
+   this.style.color="white";
    this.className= "ri-close-line";
    document.querySelector(".logo").style.color="white";
    }
    else{
        var menuBar = document.querySelector(".menu-bar")
        menuBar.style.display="none";
-       this.style="color:black";
+       this.style.color="black";
        this.className= "ri-menu-3-fill";  
        document.querySelector(".logo").style.color="";
    }
