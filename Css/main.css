@@ -13,7 +13,7 @@ body {
   background: white;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  color: #161616;
+  color: #262626;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -24,6 +24,7 @@ main {
 
 .menu-bar {
   width: 100%;
+  overflow: hidden;
   height: 100vh;
   top: 0%;
   position: fixed;
@@ -279,7 +280,7 @@ main {
 
 .section .dynamic .blob .projects .project-child .view a {
   padding: 5px 6px;
-  color: #161616;
+  color: #262626;
 }
 
 .section .dynamic .blob .article-set {

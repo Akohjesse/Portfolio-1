@@ -1,4 +1,4 @@
-$mainCol:#161616;
+$mainCol:#262626;
 $seCol:#1c6cae;
 
 *{
@@ -26,6 +26,7 @@ main{
 }
 .menu-bar{
    width:100%;
+   overflow: hidden;
    height:100vh;
    top:0%;
    position:fixed;
