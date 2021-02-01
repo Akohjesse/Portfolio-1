@@ -1,10 +1,5 @@
 this.addEventListener("load", preloader);
-// checkIfDone();
-// function checkIfDone(){
-//     // if(window.innerWidth >=  )
-//     switch(JSON.parse(sessionStorage.getItem("Animation"))){case"null":preloader();break;case"Done":preloader=null;
-//     document.querySelector(".loader").style.display="none";document.querySelector(".loader2").style.display="none";
-//     document.querySelector(".loader3").style.display="none";default:break;}} 
+sessionStorage.setItem("check", JSON.stringify("true"));
 function preloader() {
 	var loader = document.querySelector(".loader");
 	setTimeout(5000, del());
@@ -25,7 +20,7 @@ function preloader() {
 		loader3.classList.add("animate__animated", "animate__slideOutRight", "animate__delay-3s");
 	}
 	setLS();
-	sessionStorage.setItem("Animation", JSON.stringify("Done"));
+	
 }
 
 function setLS() {
