@@ -1,5 +1,4 @@
 this.addEventListener("load", preloader);
-sessionStorage.setItem("check", JSON.stringify("true"));
 function preloader() {
 	var loader = document.querySelector(".loader");
 	setTimeout(5000, del());
@@ -25,20 +24,12 @@ function preloader() {
 
 function setLS() {
 	var check = JSON.parse(sessionStorage.getItem("check"));
-	var projectBtn = document.getElementById("project");
-	var skillBtn = document.getElementById("skill");
-	var designBtn = document.getElementById("designs");
-	const blob = document.getElementsByClassName("blob")[0];
-	var static = document.querySelector(".static");
-	var skillSet = document.querySelector(".skill-set");
-	var projects = document.querySelector(".projects");
 	if (check === "true") {
-		darkmode = true;
 		darkmode = true;
 		body.style = "background:#262626; color:white; transition: 1.3s;";
 		blob.style = "color:white;";
-		toggleDark.className = "fas fa-moon animate__animated animate__fadeInUp animate__slow";
-		toggleDark.style = "color:#f7f159; transform:rotateZ(320deg)";
+		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
+		toggleDark.style = "color:rgb(250, 216, 78); ";
 		divette.style = "background-color:rgb(4,4,4);";
 		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
 			individual.style = "color:rgb(241, 146, 233)";
@@ -67,8 +58,8 @@ function setLS() {
 		body.style = "background:white";
 		blob.style = "background:white;";
 		divette.style = "background-color: rgb(241, 146, 233)";
-		toggleDark.className = "fas fa-cloud-sun animate__animated animate__fadeInDown";
-		toggleDark.style = "color:orange; transform:rotateZ(320deg)";
+		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
+		toggleDark.style = "color:#f7f159; ";
 		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
 			individual.style = "color:orange";
 		});
@@ -125,8 +116,8 @@ toggleDark.addEventListener("click", function() {
 		darkmode = true;
 		body.style = "background:#262626; color:white; transition: 1.3s;";
 		blob.style = "color:white;";
-		toggleDark.className = "fas fa-moon animate__animated animate__fadeInUp animate__slow";
-		toggleDark.style = "color:#f7f159; transform:rotateZ(320deg)";
+		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
+		toggleDark.style = "color:rgb(250, 216, 78);";
 		divette.style = "background-color:rgb(4,4,4);";
 		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
 			individual.style = "color:rgb(241, 146, 233)";
@@ -155,8 +146,8 @@ toggleDark.addEventListener("click", function() {
 		body.style = "background:white";
 		blob.style = "background:white;";
 		divette.style = "background-color: rgb(241, 146, 233)";
-		toggleDark.className = "fas fa-cloud-sun animate__animated animate__fadeInDown";
-		toggleDark.style = "color:orange; transform:rotateZ(320deg)";
+		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
+		toggleDark.style = "color:#f7f159;";
 		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
 			individual.style = "color:orange";
 		});
