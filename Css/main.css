@@ -263,6 +263,10 @@ main {
           box-shadow: 2px 3px 6px #d6d4d4;
 }
 
+.section .dynamic .blob .projects .project-child .proj-img img {
+  width: 100%;
+}
+
 .section .dynamic .blob .projects .project-child p {
   font-size: 14px;
   padding: 5px 0px;
@@ -499,15 +503,5 @@ main {
   .section .static footer .credits p {
     font-size: 13px;
   }
-}
-
-#particle-js {
-  position: fixed;
-  z-index: -5;
-}
-
-#particle-js canvas {
-  height: 90px;
-  width: 80%;
 }
 /*# sourceMappingURL=main.css.map */

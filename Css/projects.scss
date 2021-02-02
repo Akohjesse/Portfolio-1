@@ -92,7 +92,11 @@ body{
     font-weight:600;
 }
 .projects{
-
+   .proj-img{
+      img{
+         width:100%;
+      }
+   }
 display:flex;
 flex-direction:column;
 align-items: center;

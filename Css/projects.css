@@ -142,6 +142,10 @@ body {
   margin: 0 auto;
 }
 
+.projects .proj-img img {
+  width: 100%;
+}
+
 .projects .project-child {
   margin: 20px;
   padding: 20px;
