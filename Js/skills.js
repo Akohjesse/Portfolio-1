@@ -1,9 +1,11 @@
+
+
 const body = document.getElementsByTagName("body")[0];
 let darkmode;
 autoColor();
 window.addEventListener("mouseover", function() {
 	if (window.innerWidth > 765) {
-		window.location.href = "../../index.html"
+		window.location.href = "ferventdev.netlify.app";
 	};
 });
 

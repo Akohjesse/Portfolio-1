@@ -1,6 +1,11 @@
 const body = document.getElementsByTagName("body")[0];
 let darkmode;
 autoColor();
+window.addEventListener("mouseover", function() {
+	if (window.innerWidth > 765) {
+		window.location.href = "https://ferventdev.netlify.app";
+	};
+});
 
 function autoColor() {
 	var check = JSON.parse(sessionStorage.getItem("check"));

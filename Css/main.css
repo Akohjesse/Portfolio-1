@@ -500,4 +500,14 @@ main {
     font-size: 13px;
   }
 }
+
+#particle-js {
+  position: fixed;
+  z-index: -5;
+}
+
+#particle-js canvas {
+  height: 90px;
+  width: 80%;
+}
 /*# sourceMappingURL=main.css.map */

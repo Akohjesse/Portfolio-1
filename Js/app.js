@@ -238,3 +238,4 @@ function changeJamUpContent() {
 		flag = !flag;
 	})
 }
+
