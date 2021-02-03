@@ -5,10 +5,6 @@
           box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   background: white;
   -webkit-transition: 0.5s;
@@ -81,11 +77,9 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section .static {
@@ -94,7 +88,6 @@ main {
   margin: 0px 50px;
   max-width: 40%;
   overflow: hidden;
-  position: relative;
 }
 
 .section .static .avartar img {
@@ -253,6 +246,7 @@ main {
   grid-gap: 10px;
   -ms-grid-columns: (45%)[2];
       grid-template-columns: repeat(2, 45%);
+  overflow-y: visible;
 }
 
 .section .dynamic .blob .projects .project-child {
