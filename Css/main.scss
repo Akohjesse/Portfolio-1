@@ -6,16 +6,15 @@ $seCol:#1c6cae;
    padding:0;
    box-sizing: border-box;
 }
-::-webkit-scrollbar{
-   display:none;
-}
+// ::-webkit-scrollbar{
+//    display:none;
+// }
 body{
    background:white;
    transition: 0.5s;
    
    color:$mainCol;
    font-family: 'Montserrat', sans-serif;
-   // overflow-y:hidden;
   
 }
 
@@ -65,18 +64,15 @@ main{
 }
 .section{
    display:flex;
-   justify-content: space-evenly;
-   align-content: center;
+   justify-content: space-between;
+   
   
    
    .static{
-      
       align-content: center;
       margin:0px 50px;
       max-width:40%;
       overflow:hidden;
-      position:relative;
-      
       .avartar{
          img{
             border-radius:100%;
@@ -177,6 +173,7 @@ main{
          .container{
             padding:40px 40px;
             
+            
             .skills{
               h3{
                  font-size:16px;
@@ -227,7 +224,7 @@ main{
             grid-auto-rows:minmax(150px, auto);
             grid-gap:10px;
             grid-template-columns: repeat(2, 45%);
-            // overflow-y:visible !important;
+            overflow-y:visible;
           
             
             .project-child{
