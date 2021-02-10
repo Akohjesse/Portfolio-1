@@ -17,7 +17,7 @@
   "start_url": "/index.html",
   "background_color": "rgb(34, 33, 34)",
   "display": "standalone",
-  "theme_color": "#f192e9",
+  "theme_color": "#262626",
   "shortcuts": [
       {
         "name":"my projects",
