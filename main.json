@@ -1,0 +1,23 @@
+{
+  "short_name": "Jesse Akoh",
+  "name": "Fervent dev",
+  "icons": [
+      {
+      "src":"Images/stolen_afro.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+      },
+      {
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+      }
+      ],
+  "start_url": "/index.html",
+  "background_color": "rgb(34, 33, 34)",
+  "display": "fullscreen",
+  "theme_color": "#262626",
+  "prefer_related_applications": false
+
+}
