@@ -104,5 +104,14 @@
 
 
 </body>
+<script>
+      
+   document.querySelectorAll('a').forEach((item) => {
+  if (item.getAttribute('target')){
+      item.setAttribute("rel", "noopener");
+  }
+})
+
+</script>
 <script src="Js/skills.js"></script>
 </html>

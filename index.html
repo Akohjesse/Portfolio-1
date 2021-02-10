@@ -5,6 +5,10 @@
            <meta name="Author" content="Akoh Jesse" >
            <meta name="description" content="Meet Jesse Akoh, a FrontEnd Developer from Nigeria">
            <meta name='apple-touch-fullscreen' content='yes'>
+            
+           <!-- link to manifest -->
+           <link rel="manifest" href="main.webmanifest">
+
            <link rel="apple-touch-icon" href="Images/stolen_afro.png">
            <meta name="theme-color" content="rgb(241, 146, 233)"/>
            <meta name='target' content='all'>
@@ -40,6 +44,8 @@
          </div>
    </header>
 
+  
+
 <div  class="loader ">
    <h3 class="txtdeep">{Learn}</h3>
 </div>
@@ -60,10 +66,10 @@
    </ul>
 
    <div class="socials animate__animated animate__slideInLeft animate__delay-1s>
-      <a target="_blank" href="mailto:akohgodwinjesse@gmail.com"><i style="color:#e62b2b;" class="far fa-envelope"></i></a>
-      <a target="_blank" href="https://twitter.com/jesseakoh"><i  style="color:#1c6cae;" class="fab fa-twitter-square"></i></a> 
-      <a target="_blank" href="https://github.com/Akohjesse"> <i style="color:white" class="fab fa-github"></i></a> 
-      <a target="_blank" href="https://dev.to/jesseakoh"></a><i  class="fab fa-dev"></i></a> 
+      <a target="_blank" name="mail" href="mailto:akohgodwinjesse@gmail.com"><i style="color:#e62b2b;" class="far fa-envelope"></i></a>
+      <a target="_blank" name="twitter" href="https://twitter.com/jesseakoh"><i  style="color:#1c6cae;" class="fab fa-twitter-square"></i></a> 
+      <a target="_blank" name="github" href="https://github.com/Akohjesse"> <i style="color:white" class="fab fa-github"></i></a> 
+      <a target="_blank" name="practical dev" href="https://dev.to/jesseakoh"></a><i  class="fab fa-dev"></i></a> 
    </div>
 </div>
 
@@ -116,10 +122,10 @@
 
                <footer class="animate__animated animate__animated animate__wobble ">
                   <div class="links">
-                      <a target="_blank" href="mailto:akohgodwinjesse@gmail.com"><i style="color:#e62b2b;" class="far fa-envelope"></i></a>
-                      <a target="_blank" href="https://twitter.com/jesseakoh"><i  style="color:#1c6cae;" class="fab fa-twitter-square"></i></a> 
-                      <a target="_blank" href="https://github.com/Akohjesse"> <i class="fab fa-github"></i></a> 
-                      <a target="_blank" href="https://dev.to/jesseakoh"></a><i  class="fab fa-dev"></i></a> 
+                      <a target="_blank" name="mail" href="mailto:akohgodwinjesse@gmail.com"><i style="color:#e62b2b;" class="far fa-envelope"></i></a>
+                      <a target="_blank" name="twitter" href="https://twitter.com/jesseakoh"><i  style="color:#1c6cae;" class="fab fa-twitter-square"></i></a> 
+                      <a target="_blank" name="github" href="https://github.com/Akohjesse"> <i class="fab fa-github"></i></a> 
+                      <a target="_blank" name="practical Dev" href="https://dev.to/jesseakoh"></a><i  class="fab fa-dev"></i></a> 
                      
                   </div>
                   
@@ -136,7 +142,7 @@
                      <ul>
                         <li id="skill">STACK</li>
                         <li id="project" >PROJECTS</li>
-                        <li ><a class="redriding" rel="noreferer" href="#"><i class="fas fa-arrow-circle-right"></i> Resume</a></li>
+                        <li ><a class="redriding" rel="noreferer"><i class="fas fa-arrow-circle-right"></i> Resume</a></li>
                      </ul>
                   </nav>
                </header>
@@ -388,7 +394,15 @@
          <i  id="green"  class="ri-moon-fill animate__animated animate__fadeInDown "></i>
       </div>
     
-      <script class="Js/main.js"></script>
+      <script>
+      
+         document.querySelectorAll('a').forEach((item) => {
+        if (item.getAttribute('target')){
+            item.setAttribute("rel", "noopener");
+        }
+    })
+   
+      </script>
       <script src="Js/app.js"></script>
      
 </body>
