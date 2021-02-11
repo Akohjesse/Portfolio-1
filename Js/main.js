@@ -1,5 +1,5 @@
- document.querySelectorAll('a').forEach((item) => {
-     if (item.getAttribute('target')){
-         item.setAttribute("rel", "noopener");
-     }
- })
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register('sw.js')
+    .then((reg)=> console.log('Service Worker Initialised', reg))
+    .catch(err => console.log(err))
+}

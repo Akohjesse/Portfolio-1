@@ -1,7 +1,9 @@
 "use strict";
 
-document.querySelectorAll('a').forEach(function (item) {
-  if (item.getAttribute('target')) {
-    item.setAttribute("rel", "noopener");
-  }
-});
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js').then(function (reg) {
+    return console.log('Service Worker Initialised', reg);
+  })["catch"](function (err) {
+    return console.log(err);
+  });
+}
