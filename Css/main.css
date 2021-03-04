@@ -77,21 +77,17 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .section .static {
-  position: fixed;
   -ms-flex-line-pack: center;
       align-content: center;
   margin: 0px 50px;
   max-width: 40%;
   overflow: hidden;
-  position: relative;
 }
 
 .section .static .avartar img {
@@ -248,7 +244,7 @@ main {
   display: none;
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 10px;
- 
+  -ms-grid-columns: (45%)[2];
       grid-template-columns: repeat(2, 45%);
   overflow-y: visible;
 }
@@ -288,7 +284,7 @@ main {
 .section .dynamic .blob .article-set {
   display: none;
   grid-auto-rows: minmax(150px, auto);
-
+  -ms-grid-columns: (45%)[2];
       grid-template-columns: repeat(2, 45%);
   grid-gap: 15px;
 }
