@@ -18,7 +18,7 @@
   "start_url": "/",
   "background_color": "rgb(34, 33, 34)",
   "display": "fullscreen",
-  "theme_color": "#262626",
+  "theme_color": "white",
   "prefer_related_applications": false
 
 }
