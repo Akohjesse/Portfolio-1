@@ -46,12 +46,12 @@ function autoColor() {
 		var divette = document.querySelector(".divette");
 		body.style = "background:white";
 		document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "black";
-		divette.style = "background-color: rgb(241, 146, 233)";
+		divette.style = "background-color: rgb(173, 182, 215)";
 		document.querySelector(".logo").style.color = "black";
 		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 		toggleDark.style = "color:#f7f159;";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:rgb(241, 146, 233)";
+			item.style = "color:rgb(173, 182, 215)";
 		});
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";
@@ -131,12 +131,12 @@ function intDark() {
 			darkmode = false;
 			body.style = "background:white";
 			document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "black";
-			divette.style = "background-color: rgb(241, 146, 233)";
+			divette.style = "background-color: rgb(173, 182, 215)";
 			document.querySelector(".logo").style.color = "black";
 			toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 	     	toggleDark.style = "color:#f7f159; ";
 			document.querySelectorAll(".stack code ul li").forEach(function(item) {
-				item.style = "color:rgb(241, 146, 233)";
+				item.style = "color:rgb(173, 182, 215)";
 			});
 			for (i = 0; i < projectChild; i++) {
 				document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";

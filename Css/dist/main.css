@@ -4,14 +4,10 @@
   box-sizing: border-box;
 }
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 body {
   background: white;
   transition: 0.5s;
-  color: #161616;
+  color: #262626;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -22,6 +18,7 @@ main {
 
 .menu-bar {
   width: 100%;
+  overflow: hidden;
   height: 100vh;
   top: 0%;
   position: fixed;
@@ -61,15 +58,13 @@ main {
 
 .section {
   display: flex;
-  justify-content: space-evenly;
-  align-content: center;
+  justify-content: space-between;
 }
 .section .static {
   align-content: center;
   margin: 0px 50px;
   max-width: 40%;
   overflow: hidden;
-  position: relative;
 }
 .section .static .avartar img {
   border-radius: 100%;
@@ -188,12 +183,16 @@ main {
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 10px;
   grid-template-columns: repeat(2, 45%);
+  overflow-y: visible;
 }
 .section .dynamic .blob .projects .project-child {
   padding: 9px;
   width: 100%;
   border-radius: 0px;
   box-shadow: 2px 3px 6px #d6d4d4;
+}
+.section .dynamic .blob .projects .project-child .proj-img img {
+  width: 100%;
 }
 .section .dynamic .blob .projects .project-child p {
   font-size: 14px;
@@ -209,7 +208,7 @@ main {
 }
 .section .dynamic .blob .projects .project-child .view a {
   padding: 5px 6px;
-  color: #161616;
+  color: #262626;
 }
 .section .dynamic .blob .article-set {
   display: none;

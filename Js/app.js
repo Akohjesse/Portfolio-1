@@ -32,9 +32,9 @@ function setLS() {
 		toggleDark.style = "color:rgb(250, 216, 78); ";
 		divette.style = "background-color:rgb(4,4,4);";
 		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
-			individual.style = "color:rgb(241, 146, 233)";
+			individual.style = "color:rgb(173, 182, 215)";
 		});
-		document.querySelector(".jam-up").style.color = "rgb(241, 146, 233)";
+		document.querySelector(".jam-up").style.color = "rgb(173, 182, 215)";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
 			item.style = "color:orange";
 		});
@@ -57,7 +57,7 @@ function setLS() {
 		darkmode = false;
 		body.style = "background:white";
 		blob.style = "background:white;";
-		divette.style = "background-color: rgb(241, 146, 233)";
+		divette.style = "background-color: rgb(173, 182, 215)";
 		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 		toggleDark.style = "color:#f7f159; ";
 		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
@@ -65,7 +65,7 @@ function setLS() {
 		});
 		document.querySelector(".jam-up").style.color = "orange";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:rgb(241, 146, 233)";
+			item.style = "color:rgb(173, 182, 215)";
 		});
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";
@@ -95,13 +95,13 @@ projectBtn.addEventListener("click", function showProject() {
 	skillSet.style = "display:none";
 	projects.style = "display:grid";
 	skillBtn.style = "border-bottom:none;";
-	projectBtn.style = " border-bottom:3px solid rgb(241, 146, 233); font-weight:400;";
+	projectBtn.style = " border-bottom:3px solid rgb(173, 182, 215); font-weight:400;";
 });
 skillBtn.addEventListener("click", function showSkill() {
 	skillSet.classList.add("animate__animated", "animate__zoomIn");
 	skillSet.style = "display:block";
 	projects.style = "display:none";
-	skillBtn.style = " border-bottom:3px solid rgb(241, 146, 233); font-weight:400;";
+	skillBtn.style = " border-bottom:3px solid rgb(173, 182, 215); font-weight:400;";
 	projectBtn.style = "";
 });
 var toggleDark = document.getElementById("green");
@@ -120,9 +120,9 @@ toggleDark.addEventListener("click", function() {
 		toggleDark.style = "color:rgb(250, 216, 78);";
 		divette.style = "background-color:rgb(4,4,4);";
 		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
-			individual.style = "color:rgb(241, 146, 233)";
+			individual.style = "color:rgb(173, 182, 215)";
 		});
-		document.querySelector(".jam-up").style.color = "rgb(241, 146, 233)";
+		document.querySelector(".jam-up").style.color = "rgb(173, 182, 215)";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
 			item.style = "color:orange";
 		});
@@ -145,7 +145,7 @@ toggleDark.addEventListener("click", function() {
 		darkmode = false;
 		body.style = "background:white";
 		blob.style = "background:white;";
-		divette.style = "background-color: rgb(241, 146, 233)";
+		divette.style = "background-color: rgb(173, 182, 215)";
 		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 		toggleDark.style = "color:#f7f159;";
 		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
@@ -153,7 +153,7 @@ toggleDark.addEventListener("click", function() {
 		});
 		document.querySelector(".jam-up").style.color = "orange";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:rgb(241, 146, 233)";
+			item.style = "color:rgb(173, 182, 215)";
 		});
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";

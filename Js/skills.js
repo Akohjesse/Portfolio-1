@@ -50,7 +50,7 @@ function autoColor() {
 		var cont = document.querySelector(".container");
 		darkmode = false;
 		body.style = "background:white";
-		divette.style = "background-color: rgb(241, 146, 233)";
+		divette.style = "background-color:rgb(173, 182, 215)";
 		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 		toggleDark.style = "color:#f7f159;";
 		cont.style = "box-shadow: 2px 1px 20px 5px grey;";
@@ -145,7 +145,7 @@ function autoColor() {
 					sessionStorage.setItem("check", JSON.stringify(check));
 				};
 			} else {
-				divette.style = "background-color: rgb(241, 146, 233)";
+				divette.style = "background-color:rgb(173, 182, 215)";
 				darkmode = false;
 				document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "black";
 				body.style = "background:white";
