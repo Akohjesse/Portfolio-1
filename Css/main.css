@@ -13,6 +13,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+.coloredTxt {
+  color: orange;
+}
+
 main {
   margin: 40px 30px;
   padding: 30px;
@@ -106,10 +110,6 @@ main {
 .section .static .portText .intro {
   padding: 20px 0px;
   font-size: 14px;
-}
-
-.section .static .portText .intro span {
-  color: orange;
 }
 
 .section .static .portText .sList {
@@ -422,11 +422,8 @@ main {
 }
 
 @media (max-width: 765px) {
-  body {
-    overflow-x: hidden;
-  }
   main {
-    margin: 25px 20px;
+    margin: 20px 20px;
     padding: 15px;
   }
   .section {
@@ -436,22 +433,72 @@ main {
             flex-direction: column;
   }
   .section .static {
-    width: 100%;
+    width: 95%;
     max-width: none;
-    margin: 0px 20px;
+    margin: 0px auto;
   }
   .section .dynamic {
     display: none;
   }
-  .section .static .avartar img {
+  .section .static .avartar {
     width: 25%;
+    margin: 0px auto;
+  }
+  .section .static .avartar img {
+    width: 100%;
   }
   .section .static .portText {
     width: 100%;
   }
+  .section .static .portText .beginTxt {
+    text-align: center;
+  }
+  .section .static .portText .beginTxt p {
+    width: 60%;
+    margin: 0 auto;
+  }
   .section .static .portText .intro {
+    font-style: italic;
+    font-weight: 400;
     line-height: 27px;
     font-size: 16px;
+  }
+  .section .static .portText .intro .quote {
+    width: 70%;
+    margin: 0px auto;
+  }
+  .section .static .portText .intro .quote b {
+    float: right;
+  }
+  .section .static .portText .me {
+    margin: 5% 0;
+    line-height: 27px;
+    text-align: center;
+  }
+  .section .static .portText .me p {
+    font-size: 16px;
+  }
+  .section .static .portText .me button {
+    margin: 15px 0px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 38px;
+    outline: none;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background: orange;
+    color: white;
+    white-space: nowrap;
   }
   .section .static .portText .sList {
     font-size: 16px;
@@ -459,6 +506,10 @@ main {
   }
   .section .static .portText .moreTxt {
     font-size: 14px;
+    text-align: center;
+  }
+  .section .static footer {
+    text-align: center;
   }
   .section .static footer .credits p {
     font-size: 14px;
@@ -466,14 +517,39 @@ main {
 }
 
 @media (max-width: 480px) {
-  .section .static .avartar {
-    width: auto;
+  .section .static {
+    width: 97%;
   }
   .section .static .portText {
     font-size: 15px;
+    width: 100%;
+  }
+  .section .static .portText .beginTxt {
+    text-align: center;
+  }
+  .section .static .portText .beginTxt p {
+    width: 90%;
+    margin: 0 auto;
   }
   .section .static .portText .intro {
-    font-size: 1em;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 27px;
+    font-size: 16px;
+  }
+  .section .static .portText .intro .quote {
+    width: 90%;
+    margin: 9px auto;
+  }
+  .section .static .portText .intro .quote b {
+    float: right;
+  }
+  .section .static .avartar {
+    width: 35%;
+    margin: 0px auto;
+  }
+  .section .static .avartar img {
+    width: 100%;
   }
   .section .static .portText .moreTxt {
     font-size: 14px;
@@ -483,8 +559,8 @@ main {
     line-height: 30px;
   }
   main {
-    margin: 20px 10px;
-    padding: 10px;
+    margin: 10px 10px;
+    padding: 5px;
   }
   .section .static footer .links {
     padding: 10px;

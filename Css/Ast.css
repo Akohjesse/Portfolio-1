@@ -11,12 +11,12 @@
  .tlspkpk{
      display:none;
  }
-.moon{
+.remote{
     position: absolute;
     top:15%;
     left:30%;
 }
-.moon i{
+.remote i{
      font-size:60px;
      color:rgb(250, 216, 78)
  }
@@ -25,14 +25,6 @@
      text-decoration: none;
      padding:5px;
    
- }
- #articles{
-     
-     border-radius: 4px;
- }
- #articles a{
-     text-decoration: none;
-     color:inherit;
  }
  .jam-up{
      color:orange;
@@ -86,41 +78,40 @@
 }
 
  @media (max-width:1080px){
-    .moon{
+    .remote{
         position: absolute;
         top:15%;
         left:35%;
      }
-     .moon i{
+     .remote i{
          font-size:50px;
          color:orange;
      }
  }
  @media  (min-width:768px) and (max-width:800px){
-    .moon{
+    .remote{
         position: absolute;
         top:10%;
         left:35%;
      }
-     .moon i{
+     .remote i{
          font-size:50px;
          color:orange;
      }
  }
  @media (max-width:765px){
-
-    .moon{
-        position: absolute;
-        top:10%;
-        left:75%;
+     .remote{
+         display:none;
      }
-     .moon i{
+     .toggle i{
          font-size:35px;
          color:orange;
      }
      .tlspkpk{
          display:flex;
-         margin:35px 30px;
+         width:100%;
+         padding:4% 4%;
+         margin:0 auto;
          z-index:92;
          justify-content: space-between;
      }
@@ -131,9 +122,12 @@
      }
       .menu{
         z-index:92;
-         font-size:1.3em;
+         font-size:1.4em;
          transition: ease-in 2s;
          font-weight:600;
+     }
+     .divette{
+         display:none;
      }
  }
  @media (max-width:480px){

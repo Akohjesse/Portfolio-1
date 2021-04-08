@@ -22,6 +22,17 @@ function preloader() {
 	
 }
 
+
+// $(document).ready(()=>{
+// 	$(".tlspkpk").sticky({topspacing:0, center:true, widthFromWrapper:true, zIndex:92});
+// 	$('.tlspkpk').on('sticky-start', ()=>{
+//       $('.tlspkpk').css({'background-color':'white'})
+// 	})
+// 	$('.tlspkpk').on('sticky-end', ()=>{
+//         $('.tlspkpk').css({'background':''});
+//     })
+// })
+
 function setLS() {
 	var check = JSON.parse(sessionStorage.getItem("check"));
 	if (check === "true") {
@@ -31,7 +42,7 @@ function setLS() {
 		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
 		toggleDark.style = "color:rgb(250, 216, 78); ";
 		divette.style = "background-color:rgb(4,4,4);";
-		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
 			individual.style = "color:rgb(173, 182, 215)";
 		});
 		document.querySelector(".jam-up").style.color = "rgb(173, 182, 215)";
@@ -60,7 +71,7 @@ function setLS() {
 		divette.style = "background-color: rgb(173, 182, 215)";
 		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 		toggleDark.style = "color:#f7f159; ";
-		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
 			individual.style = "color:orange";
 		});
 		document.querySelector(".jam-up").style.color = "orange";
@@ -119,7 +130,7 @@ toggleDark.addEventListener("click", function() {
 		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
 		toggleDark.style = "color:rgb(250, 216, 78);";
 		divette.style = "background-color:rgb(4,4,4);";
-		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
 			individual.style = "color:rgb(173, 182, 215)";
 		});
 		document.querySelector(".jam-up").style.color = "rgb(173, 182, 215)";
@@ -148,7 +159,7 @@ toggleDark.addEventListener("click", function() {
 		divette.style = "background-color: rgb(173, 182, 215)";
 		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 		toggleDark.style = "color:#f7f159;";
-		document.querySelectorAll(".portText .intro p span").forEach(function(individual) {
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
 			individual.style = "color:orange";
 		});
 		document.querySelector(".jam-up").style.color = "orange";
