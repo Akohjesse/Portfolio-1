@@ -7,8 +7,8 @@
 
 body {
   background: white;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.5s ease-in;
+  transition: 0.5s ease-in;
   color: #262626;
   font-family: 'Montserrat', sans-serif;
 }
@@ -466,7 +466,6 @@ main {
   }
   .section .static .portText .intro .quote {
     width: 70%;
-    color: #4f4e4e;
     margin: 0px auto;
   }
   .section .static .portText .intro .quote b {

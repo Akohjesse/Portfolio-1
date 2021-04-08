@@ -10,7 +10,7 @@
  }
  .tlspkpk{
      display:none;
-     transition: 0.5s;
+    
  }
 .remote{
     position: absolute;
@@ -36,45 +36,27 @@
  }
 /* 
  style for the loader animation */
- .loader{
-     width:100%;
-     height:100vh;
-     position:fixed;
-     z-index:101;
-     top:0;
-     display:flex;
-     justify-content: center;
-     align-items: center;
-     background-color:rgb(34, 33, 34);
-     
- }
- .loader2{
+.loader{
     width:100%;
-    height:100vh;
-    position:fixed;
-    z-index:99;
-    display:flex;
-    justify-content: center;
-     align-items: center;
-    top:0;
-    background-color:rgb(173, 182, 215);
- }
-.loader3{
-    width:100%;
-    height:100vh;
+    height:100%;
     position:fixed;
     z-index:100;
     top:0;
+    left:0;
+    overflow:hidden;
     display:flex;
     justify-content: center;
-     align-items: center;
-    background-color:orange;
+    background-color:#262626;
 }
 .txtdeep{
-    text-align: center;
-    justify-self: center;
-    align-self: center;
-    font-size:1.5em;
+        margin:45% 0px;
+        text-align: center;
+}
+.txtdeep img{
+    border-radius: 50%;
+    width:60%;
+}
+.txtdeep q{
     color:white;
 }
 
@@ -111,6 +93,7 @@
      .tlspkpk{
          display:flex;
          width:95%;
+         transition: 0.5s ease-in;
          padding:4% 4%;
          background-color: white;
          z-index:92;
