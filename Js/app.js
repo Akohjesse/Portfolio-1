@@ -22,6 +22,9 @@ function preloader() {
 	
 }
 
+
+var purple = 'rgb(173, 182, 215)';
+
 $(document).ready(()=>{
 	$('.tlspkpk').sticky({
 		topSpacing:0,
@@ -35,6 +38,8 @@ function setLS() {
 	var check = JSON.parse(sessionStorage.getItem("check"));
 	if (check === "true") {
 		darkmode = true;
+		$('.tlspkpk').css({'background-color':`#262626;`})
+		$('#hire').css({'background': `${purple}`})
 		body.style = "background:#262626; color:white; transition: 1.3s;";
 		blob.style = "color:white;";
 		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
@@ -64,6 +69,7 @@ function setLS() {
 		}
 	} else {
 		darkmode = false;
+		$('#hire').css({'background': ``})
 		body.style = "background:white";
 		blob.style = "background:white;";
 		divette.style = "background-color: rgb(173, 182, 215)";
@@ -123,6 +129,8 @@ let darkmode;
 toggleDark.addEventListener("click", function() {
 	if (flag) {
 		darkmode = true;
+		$('.tlspkpk').css({'background-color':`#262626;`})
+		$('#hire').css({'background': `${purple}`})
 		body.style = "background:#262626; color:white; transition: 1.3s;";
 		blob.style = "color:white;";
 		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
@@ -152,6 +160,7 @@ toggleDark.addEventListener("click", function() {
 		}
 	} else {
 		darkmode = false;
+		$('#hire').css({'background': ``})
 		body.style = "background:white";
 		blob.style = "background:white;";
 		divette.style = "background-color: rgb(173, 182, 215)";
