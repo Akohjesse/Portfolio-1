@@ -117,7 +117,7 @@
          justify-content: space-between;
      }
      .logo{
-         font-size:1.5em;
+         font-size:1.2em;
          z-index:92;
          transition:ease-in 0.3s;
      }

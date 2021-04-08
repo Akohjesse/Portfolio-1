@@ -480,9 +480,7 @@ main{
    }
    .section .static .portText{
        .beginTxt{
-          h3{
-             font-size:0.9em;
-          }
+
          text-align: center;
          p{
             width:60%;
@@ -499,6 +497,7 @@ main{
             font-size:16px;
          .quote{
             width:70%;
+            color:rgb(79, 78, 78);
             margin: 0px auto;
             b{
                float:right;
