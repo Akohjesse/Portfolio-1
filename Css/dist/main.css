@@ -370,7 +370,7 @@ main {
   .section .static {
     width: 95%;
     max-width: none;
-    margin: 18% auto 0 auto;
+    margin: 0 auto 0 auto;
   }
   .section .dynamic {
     display: none;
@@ -389,6 +389,9 @@ main {
   }
   .section .static .portText .beginTxt {
     text-align: center;
+  }
+  .section .static .portText .beginTxt h3 {
+    font-size: 0.9em;
   }
   .section .static .portText .beginTxt p {
     width: 60%;
@@ -449,6 +452,7 @@ main {
   .section .static .portText .sList img {
     text-align: center;
     width: 98%;
+    box-shadow: 3px 4px 5px #878684;
   }
 
   .section .static .portText .moreTxt {

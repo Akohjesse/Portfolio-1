@@ -69,6 +69,7 @@ function setLS() {
 		}
 	} else {
 		darkmode = false;
+		$('.tlspkpk').css({'background-color':``})
 		$('#hire').css({'background': ``})
 		body.style = "background:white";
 		blob.style = "background:white;";
@@ -129,7 +130,7 @@ let darkmode;
 toggleDark.addEventListener("click", function() {
 	if (flag) {
 		darkmode = true;
-		$('.tlspkpk').css({'background-color':`#262626;`})
+		$('.tlspkpk').css({'background-color':`#262626`})
 		$('#hire').css({'background': `${purple}`})
 		body.style = "background:#262626; color:white; transition: 1.3s;";
 		blob.style = "color:white;";
@@ -160,6 +161,7 @@ toggleDark.addEventListener("click", function() {
 		}
 	} else {
 		darkmode = false;
+		$('.tlspkpk').css({'background-color':``})
 		$('#hire').css({'background': ``})
 		body.style = "background:white";
 		blob.style = "background:white;";

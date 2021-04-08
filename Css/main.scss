@@ -480,6 +480,9 @@ main{
    }
    .section .static .portText{
        .beginTxt{
+          h3{
+             font-size:0.9em;
+          }
          text-align: center;
          p{
             width:60%;

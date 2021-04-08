@@ -10,6 +10,7 @@
  }
  .tlspkpk{
      display:none;
+     transition: 0.5s;
  }
 .remote{
     position: absolute;

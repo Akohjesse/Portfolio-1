@@ -453,6 +453,9 @@ main {
   .section .static .portText .beginTxt {
     text-align: center;
   }
+  .section .static .portText .beginTxt h3 {
+    font-size: 0.9em;
+  }
   .section .static .portText .beginTxt p {
     width: 60%;
     margin: 0 auto;
