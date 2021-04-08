@@ -22,16 +22,14 @@ function preloader() {
 	
 }
 
+$(document).ready(()=>{
+	$('.tlspkpk').sticky({
+		topSpacing:0,
+		center:true,
+		zIndex:92,
+	})
+})
 
-// $(document).ready(()=>{
-// 	$(".tlspkpk").sticky({topspacing:0, center:true, widthFromWrapper:true, zIndex:92});
-// 	$('.tlspkpk').on('sticky-start', ()=>{
-//       $('.tlspkpk').css({'background-color':'white'})
-// 	})
-// 	$('.tlspkpk').on('sticky-end', ()=>{
-//         $('.tlspkpk').css({'background':''});
-//     })
-// })
 
 function setLS() {
 	var check = JSON.parse(sessionStorage.getItem("check"));
