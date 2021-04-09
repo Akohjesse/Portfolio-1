@@ -178,46 +178,30 @@ toggleDark.addEventListener("click", function() {
 	}
 	flag = !flag;
 });
-var toggleNav = document.querySelectorAll(".ri-menu-3-fill")[0].addEventListener("click", openMenu);
+const toggleNav = document.querySelectorAll(".ri-menu-3-fill")[0].addEventListener("click", openMenu);
 var jesse = true;
 
 function openMenu() {
 	if (jesse) {
 		var menuBar = document.querySelector(".menu-bar");
+		$('.container_full').css({'overflow':'hidden'});
 		menuBar.style.display = "flex";
 		this.style.color = "white";
-		document.body.style = "overflow:hidden";
 		this.className = "ri-close-line";
 	} else {
 		var menuBar = document.querySelector(".menu-bar");
-		document.body.style = "overflow:";
 		menuBar.style.display = "none";
+		$('.container_full').css({'overflow':''});
 		if (!darkmode) {
 			this.style.color = "black";
 		} else {
 			this.style.color = "white";
 		};
 		this.className = "ri-menu-3-fill";
-	
 	}
 	jesse = !jesse;
 }
-document.querySelector(".logo").addEventListener("click", function() {
-	var menuBar = document.querySelector(".menu-bar");
-	menuBar.style = "display:none;";
-	this.style.color = "";
-});
-document.getElementById("home_btn").addEventListener("click", function() {
-	var menuBar = document.querySelector(".menu-bar");
-	menuBar.style = "display:none;";
-	document.querySelectorAll(".ri-close-line")[0].className = "ri-menu-3-fill";
-	if (!darkmode) {
-		document.querySelectorAll(".ri-menu-3-fill")[0].style = "color:black";
-	} else {
-		document.querySelectorAll(".ri-menu-3-fill")[0].style = "color:white";
-	}
-	document.querySelector(".logo").style.color = "";
-});
+
 changeJamUpContent();
 
 function changeJamUpContent() {

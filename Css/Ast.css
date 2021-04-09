@@ -106,7 +106,7 @@
          transition:ease-in 0.3s;
      }
       .menu{
-        z-index:98;
+        z-index:100;
          font-size:1.4em;
          transition: ease-in 2s;
          font-weight:600;

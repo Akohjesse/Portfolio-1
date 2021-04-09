@@ -258,20 +258,6 @@ main{
               }
             }
          }  
-
-         .article-set{
-            display:none;
-            grid-auto-rows:minmax(150px, auto);
-            grid-template-columns: repeat(2,45% );
-            grid-gap:15px;
-            .post{
-               box-shadow:2px 3px 6px rgb(214, 212, 212);
-               padding:9px;
-               border-radius:1px;
-               
-            }
-
-         }
       }
    }
 }

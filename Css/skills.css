@@ -15,6 +15,65 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  overflow-y: hidden;
+}
+
+.containment {
+  width: 95%;
+  margin: 4% auto;
+}
+
+.containment .build p {
+  text-align: center;
+}
+
+.containment .build .jamstack {
+  text-align: center;
+  margin: 4%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+}
+
+.containment .build .jamstack .divs {
+  margin: 10% 0px;
+}
+
+.containment .build .jamstack .divs img {
+  width: 60%;
+  border-radius: 20px;
+}
+
+.containment .build .jamstack .divs p {
+  font-size: 1.3em;
+  border-right: 2px dotted orange;
+  border-bottom: 2px solid orange;
+}
+
+.containment .trad p {
+  text-align: center;
+}
+
+.containment .trad .divs {
+  text-align: center;
+  margin: 4%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+}
+
+.containment .trad .divs .item {
+  margin: 10% 0px;
+}
+
+.containment .trad .divs .item img {
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
+}
+
+.containment .trad .divs .item p {
+  font-size: 1.2em;
 }
 /*# sourceMappingURL=skills.css.map */

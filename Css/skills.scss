@@ -8,6 +8,53 @@ body{
     align-items: center;
     align-content: center;
     justify-content: center;
-    overflow-y:hidden;
 }
-
+.containment{
+    width:95%;
+    margin:4% auto;
+    .build{
+        p{
+         text-align: center;
+        }
+      .jamstack{
+          text-align: center;
+          margin:4%;
+          display: grid;
+          grid-template-columns:repeat(2, 50%) ;
+          .divs{
+              margin:10% 0px;
+              img{
+                  width:60%;
+                  border-radius: 20px;
+              }
+              p{
+                  font-size: 1.3em;
+                  border-right:2px dotted orange;
+            border-bottom:2px solid orange ;
+              }
+          }
+      } 
+    }
+    .trad{
+        p{
+            text-align: center;
+        }
+        .divs{
+            text-align: center;
+            margin:4%;
+            display: grid;
+            grid-template-columns:repeat(2, 50%) ;
+            .item{
+                margin:10% 0px;
+                img{
+                    width:70%;
+                    height:70%;
+                    border-radius: 10px;
+                }
+                p{
+                    font-size: 1.2em;
+                }  
+            }
+        }
+    }
+}

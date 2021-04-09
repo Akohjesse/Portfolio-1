@@ -281,21 +281,6 @@ main {
   color: #262626;
 }
 
-.section .dynamic .blob .article-set {
-  display: none;
-  grid-auto-rows: minmax(150px, auto);
-  -ms-grid-columns: (45%)[2];
-      grid-template-columns: repeat(2, 45%);
-  grid-gap: 15px;
-}
-
-.section .dynamic .blob .article-set .post {
-  -webkit-box-shadow: 2px 3px 6px #d6d4d4;
-          box-shadow: 2px 3px 6px #d6d4d4;
-  padding: 9px;
-  border-radius: 1px;
-}
-
 @media (max-width: 1080px) {
   main {
     margin: 35px 25px;

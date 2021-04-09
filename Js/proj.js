@@ -10,6 +10,9 @@ window.addEventListener("mouseover", function() {
 function autoColor() {
 	var check = JSON.parse(sessionStorage.getItem("check"));
 	if (check === "true") {
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+			individual.style = "color:rgb(173, 182, 215)";
+		});
 		var toggleDark = document.getElementById("green");
 		$('.tlspkpk').css({'background-color':`#262626`})
 		var projectChild = document.querySelectorAll(".project-child").length;
@@ -21,7 +24,7 @@ function autoColor() {
 		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
 		toggleDark.style = "color:rgb(250, 216, 78);";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:orange";
+			item.style = "color:rgb(173, 182, 215)";
 		});
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow: rgb(4 4 4) 2px 1px 6px 1px";
@@ -39,6 +42,9 @@ function autoColor() {
 			sessionStorage.setItem("check", JSON.stringify(check));
 		}
 	} else {
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+			individual.style = "color:orange";
+		});
 		var toggleDark = document.getElementById("green");
 		$('.tlspkpk').css({'background-color':``})
 		var projectChild = document.querySelectorAll(".project-child").length;
@@ -49,7 +55,7 @@ function autoColor() {
 		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 		toggleDark.style = "color:#f7f159;";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:rgb(173, 182, 215)";
+			item.style = "color:orange";
 		});
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";
@@ -78,18 +84,17 @@ function openMenu() {
 		this.style.color = "white";
 		this.className = "ri-close-line";
 		document.querySelector(".logo").style.color = "white";
-		document.body.style = "overflow:hidden";
+		$('.container_full').css({'overflow':'hidden'});
 	} else {
-		var menuBar = document.querySelector(".menu-bar");
-		menuBar.style.display = "none";
-		document.body.style = "overflow:"
 		if (!darkmode) {
 			this.style.color = "black";
-			document.querySelector(".logo").style.color = "black";
 		} else {
 			this.style.color = "white";
-			document.querySelector(".logo").style.color = "white";
 		};
+		var menuBar = document.querySelector(".menu-bar");
+		menuBar.style.display = "none";
+		$('.container_full').css({'overflow':''});
+	
 		this.className = "ri-menu-3-fill";
 	}
 	jesse = !jesse;
@@ -109,15 +114,19 @@ function intDark() {
 	var flag = true;
 	toggleDark.addEventListener("click", function() {
 		if (flag) {
+			document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+				individual.style = "color:rgb(173, 182, 215)";
+			});
 			darkmode = true;
 			$('.tlspkpk').css({'background-color':`#262626`})
 			body.style = "background:#262626; color:white; transition: 1.3s;";
 			toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
-		toggleDark.style = "color:rgb(250, 216, 78);";
-			document.querySelector(".logo").style.color = "white";
-			document.querySelectorAll(".stack code ul li").forEach(function(item) {
-				item.style = "color:orange";
+		    toggleDark.style = "color:rgb(250, 216, 78);";
+              
+			document.querySelectorAll(".stack code ul li").forEach(function(individual) {
+				individual.style = "color:rgb(173, 182, 215)";
 			});
+
 			for (i = 0; i < projectChild; i++) {
 				document.querySelectorAll(".project-child")[i].style = "box-shadow: rgb(4 4 4) 2px 1px 6px 1px";
 			};
@@ -133,8 +142,12 @@ function intDark() {
 				check = "true";
 				sessionStorage.setItem("check", JSON.stringify(check));
 			}
-		} else {
+		   }
+		  else {
 			darkmode = false;
+			document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+				individual.style = "color:orange";
+			});
 			body.style = "background:white";
 			$('.tlspkpk').css({'background-color':``})
 			document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "black";
@@ -142,8 +155,8 @@ function intDark() {
 			document.querySelector(".logo").style.color = "black";
 			toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 	     	toggleDark.style = "color:#f7f159; ";
-			document.querySelectorAll(".stack code ul li").forEach(function(item) {
-				item.style = "color:rgb(173, 182, 215)";
+			 document.querySelectorAll(".stack code ul li").forEach(function(individual) {
+				individual.style = "color:orange";
 			});
 			for (i = 0; i < projectChild; i++) {
 				document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";
