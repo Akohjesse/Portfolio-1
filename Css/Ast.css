@@ -54,11 +54,12 @@
 }
 .txtdeep img{
     border-radius: 50%;
-    width:60%;
+    width:50%;
 }
 .txtdeep q{
     text-align: center;
     color:white;
+    padding:0 4%;
 }
 
  @media (max-width:1080px){
@@ -102,11 +103,10 @@
      }
      .logo{
          font-size:1.2em;
-         z-index:92;
          transition:ease-in 0.3s;
      }
       .menu{
-        z-index:92;
+        z-index:98;
          font-size:1.4em;
          transition: ease-in 2s;
          font-weight:600;

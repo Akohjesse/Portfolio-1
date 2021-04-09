@@ -26,17 +26,17 @@ main{
 }
 .menu-bar{
    width:100%;
-   overflow: hidden;
+   overflow-y:hidden;
    height:100vh;
    top:0%;
    position:fixed;
    transition:0.4s;
-   z-index:90;
+   z-index:97;
    color:white;
    top:0;
    display:none;
    flex-direction:column;
-   background:rgb(72, 26, 72);
+   background:rgb(40, 41, 43);
    ul{
       align-self:center;
       margin:20%;

@@ -24,13 +24,13 @@ main {
 
 .menu-bar {
   width: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
   height: 100vh;
   top: 0%;
   position: fixed;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  z-index: 90;
+  z-index: 97;
   color: white;
   top: 0;
   display: none;
@@ -38,7 +38,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #481a48;
+  background: #28292b;
 }
 
 .menu-bar ul {

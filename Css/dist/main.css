@@ -22,17 +22,17 @@ main {
 
 .menu-bar {
   width: 100%;
-  overflow: hidden;
+  overflow-y: hidden;
   height: 100vh;
   top: 0%;
   position: fixed;
   transition: 0.4s;
-  z-index: 90;
+  z-index: 97;
   color: white;
   top: 0;
   display: none;
   flex-direction: column;
-  background: #481a48;
+  background: #28292b;
 }
 .menu-bar ul {
   align-self: center;
@@ -403,7 +403,6 @@ main {
   }
   .section .static .portText .intro .quote {
     width: 70%;
-    color: #4f4e4e;
     margin: 0px auto;
   }
   .section .static .portText .intro .quote b {

@@ -1,10 +1,10 @@
 this.addEventListener("load", preloader);
 function preloader() {
-	setTimeout(()=>{document.querySelector('.loader').classList.add('animate__fadeOut')}, 2000)
-		
+	setTimeout(funct =>{
+		document.querySelector('.loader').classList.add('animate__slideOutRight')
+	}, 3000)
 	
 	setLS();
-	
 }
 
 
@@ -23,7 +23,7 @@ function setLS() {
 	var check = JSON.parse(sessionStorage.getItem("check"));
 	if (check === "true") {
 		darkmode = true;
-		$('.tlspkpk').css({'background-color':`#262626;`})
+		$('.tlspkpk').css({'background-color':`#262626`})
 		$('#hire').css({'background': `${purple}`})
 		body.style = "background:#262626; color:white; transition: 1.3s;";
 		blob.style = "color:white;";
@@ -54,7 +54,7 @@ function setLS() {
 		}
 	} else {
 		darkmode = false;
-		$('.tlspkpk').css({'background-color':``})
+		$('.tlspkpk').css({'background-color':''})
 		$('#hire').css({'background': ``})
 		body.style = "background:white";
 		blob.style = "background:white;";
@@ -87,7 +87,6 @@ function setLS() {
 }
 var projectBtn = document.getElementById("project");
 var skillBtn = document.getElementById("skill");
-var designBtn = document.getElementById("designs");
 const blob = document.getElementsByClassName("blob")[0];
 var static = document.querySelector(".static");
 var skillSet = document.querySelector(".skill-set");
@@ -105,6 +104,7 @@ skillBtn.addEventListener("click", function showSkill() {
 	skillBtn.style = " border-bottom:3px solid rgb(173, 182, 215); font-weight:400;";
 	projectBtn.style = "";
 });
+
 var toggleDark = document.getElementById("green");
 var body = document.getElementsByTagName("body")[0];
 var projectChild = document.querySelectorAll(".project-child").length;
@@ -186,10 +186,11 @@ function openMenu() {
 		var menuBar = document.querySelector(".menu-bar");
 		menuBar.style.display = "flex";
 		this.style.color = "white";
+		document.body.style = "overflow:hidden";
 		this.className = "ri-close-line";
-		document.querySelector(".logo").style.color = "white";
 	} else {
 		var menuBar = document.querySelector(".menu-bar");
+		document.body.style = "overflow:";
 		menuBar.style.display = "none";
 		if (!darkmode) {
 			this.style.color = "black";
@@ -197,7 +198,7 @@ function openMenu() {
 			this.style.color = "white";
 		};
 		this.className = "ri-menu-3-fill";
-		document.querySelector(".logo").style.color = "";
+	
 	}
 	jesse = !jesse;
 }
