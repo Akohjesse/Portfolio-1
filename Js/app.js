@@ -180,7 +180,71 @@ toggleDark.addEventListener("click", function turnOn() {
 	flag = !flag;
 });
 
-secondBtn.addEventListener("click", turnOn());
+secondBtn.addEventListener("click", ()=>{
+	if (flag) {
+		darkmode = true;
+		$('.tlspkpk').css({'background-color':`#262626`})
+		$('#hire').css({'background': `${purple}`})
+		body.style = "background:#262626; color:white; transition: 1.3s;";
+		blob.style = "color:white;";
+		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
+		toggleDark.style = "color:rgb(250, 216, 78);";
+		divette.style = "background-color:rgb(4,4,4);";
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+			individual.style = "color:rgb(173, 182, 215)";
+		});
+		document.querySelector(".jam-up").style.color = "rgb(173, 182, 215)";
+		document.querySelectorAll(".stack code ul li").forEach(function(item) {
+			item.style = "color:orange";
+		});
+		for (i = 0; i < projectChild; i++) {
+			document.querySelectorAll(".project-child")[i].style = "box-shadow: rgb(4 4 4) 2px 1px 6px 1px";
+		};
+		document.querySelectorAll(".view a").forEach(function(item) {
+			item.style.color = "white";
+		});
+		document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "white";
+		if (sessionStorage.getItem("check") === null) {
+			var check = "true";
+			sessionStorage.setItem("check", JSON.stringify("check"));
+		} else {
+			var check = JSON.parse(sessionStorage.getItem("check"));
+			check = "true";
+			sessionStorage.setItem("check", JSON.stringify(check));
+		}
+	} else {
+		darkmode = false;
+		$('.tlspkpk').css({'background-color':``})
+		$('#hire').css({'background': ``})
+		body.style = "background:white";
+		blob.style = "background:white;";
+		divette.style = "background-color: rgb(173, 182, 215)";
+		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
+		toggleDark.style = "color:#f7f159;";
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+			individual.style = "color:orange";
+		});
+		document.querySelector(".jam-up").style.color = "orange";
+		document.querySelectorAll(".stack code ul li").forEach(function(item) {
+			item.style = "color:rgb(173, 182, 215)";
+		});
+		for (i = 0; i < projectChild; i++) {
+			document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";
+		};
+		document.querySelectorAll(".view a").forEach(function(item) {
+			item.style.color = "#262626";
+			document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "black";
+			if (sessionStorage.getItem("check") === null) {
+				var check = false;
+				sessionStorage.setItem("check", JSON.stringify("check"));
+			} else {
+				var check = JSON.parse(sessionStorage.getItem("check"));
+				check = "false";
+				sessionStorage.setItem("check", JSON.stringify(check));
+			}
+		})
+	}
+});
 
 
 const toggleNav = document.querySelectorAll(".ri-menu-3-fill")[0].addEventListener("click", openMenu);
