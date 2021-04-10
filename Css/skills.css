@@ -76,4 +76,56 @@ body {
 .containment .trad .divs .item p {
   font-size: 1.2em;
 }
+
+@media (min-width: 780px) {
+  .containment {
+    width: 95%;
+    margin: 4% auto;
+  }
+  .containment .build p {
+    text-align: unset;
+  }
+  .containment .build .jamstack {
+    text-align: inherit;
+    margin: 4%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (30%)[3];
+        grid-template-columns: repeat(3, 30%);
+  }
+  .containment .build .jamstack .divs {
+    margin: 10% 0px;
+  }
+  .containment .build .jamstack .divs img {
+    width: 60%;
+    border-radius: 20px;
+  }
+  .containment .build .jamstack .divs p {
+    font-size: 1.3em;
+    border-right: 2px dotted orange;
+    border-bottom: 2px solid orange;
+  }
+  .containment .trad p {
+    text-align: center;
+  }
+  .containment .trad .divs {
+    text-align: center;
+    margin: 4%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (25%)[3];
+        grid-template-columns: repeat(3, 25%);
+  }
+  .containment .trad .divs .item {
+    margin: 10% 0px;
+  }
+  .containment .trad .divs .item img {
+    width: 60%;
+    height: 60%;
+    border-radius: 10px;
+  }
+  .containment .trad .divs .item p {
+    font-size: 1.2em;
+  }
+}
 /*# sourceMappingURL=skills.css.map */

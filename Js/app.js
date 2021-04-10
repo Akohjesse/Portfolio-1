@@ -105,14 +105,15 @@ skillBtn.addEventListener("click", function showSkill() {
 	projectBtn.style = "";
 });
 
-var toggleDark = document.getElementById("green");
+var toggleDark = document.querySelectorAll("#green")[0];
+var secondBtn = document.querySelectorAll('#green')[1];
 var body = document.getElementsByTagName("body")[0];
 var projectChild = document.querySelectorAll(".project-child").length;
 var articlePost = document.querySelectorAll(".post").length;
 var flag = true;
 var divette = document.querySelector(".divette");
 let darkmode;
-toggleDark.addEventListener("click", function() {
+toggleDark.addEventListener("click", function turnOn() {
 	if (flag) {
 		darkmode = true;
 		$('.tlspkpk').css({'background-color':`#262626`})
@@ -178,6 +179,10 @@ toggleDark.addEventListener("click", function() {
 	}
 	flag = !flag;
 });
+
+secondBtn.addEventListener("click", turnOn());
+
+
 const toggleNav = document.querySelectorAll(".ri-menu-3-fill")[0].addEventListener("click", openMenu);
 var jesse = true;
 

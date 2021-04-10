@@ -20,7 +20,7 @@ body{
    color:orange;
 }
 main{
-   margin:40px 30px;
+   margin:20px 30px;
    padding:30px;
   
 }
@@ -67,8 +67,6 @@ main{
    display:flex;
    justify-content: space-between;
    
-  
-   
    .static{
       align-content: center;
       margin:0px 50px;
@@ -93,9 +91,37 @@ main{
             padding:20px 0px;
             font-size:14px;
          }
+         .me{
+            button{
+               margin:15px 0px;
+               border-radius: 4px;
+               cursor: pointer;
+               border:none;
+               box-sizing: border-box; 
+               display: inline-block;
+               height: 38px;
+               padding: 0 30px;
+               text-align: center;
+               font-size: 13px;
+               font-weight: 600;
+               line-height: 38px;
+               outline: none;
+               letter-spacing: .1rem;
+               text-transform: uppercase;
+               text-decoration: none;
+               background:orange;
+               color:white;
+               white-space: nowrap;
+            }
+         }
          .sList{
            font-size:15px; 
-           margin:20px 20px;
+           margin:20px 0px;
+           img{
+              width:60%;
+          margin:5% 0px;
+          box-shadow: 3px 4px 6px grey;
+           }
            li{
               list-style-type: armenian;
            }
@@ -143,7 +169,7 @@ main{
                li{
                   list-style-type:none;
                   text-align: center;
-                  padding: 2px 25px;
+                  padding: 2px 30px;
                   font-size:16px;
                   // transition:5s ease-in;
                  
@@ -154,7 +180,7 @@ main{
                    
                   }
                   &:nth-child(1){
-                     border-bottom:3px solid rgb(241, 146, 233); font-weight:400;
+                     border-bottom:3px solid orange; font-weight:400;
                    }
                }
             }
@@ -168,53 +194,8 @@ main{
          height:90%;
 
          .container{
-            padding:40px 40px;
-            
-            
-            .skills{
-              h3{
-                 font-size:16px;
-                 padding:10px;
-              }
-              .hr{
-               width:50%;
-               height:1px;
-               background-color:$seCol;
-               }
-              .skLi{
-                 width:100%;
-                 ul{                    
-                    li{
-                      display:inline-flex;
-                      padding:20px;
-                    }
-                 }
-              }
-   
-            }
+            padding:40px 0px;
 
-            .tools{
-               h3{
-                  font-size:16px;
-                 padding:10px;
-               }
-               .hr{
-                  width:50%;
-                  height:1px;
-                  background-color:$seCol;
-               }
-               .toLi{
-                  ul{
-                     li{
-                        display:inline-flex;
-                       padding:10px 10px;
-                        justify-content: space-around;
-                        font-size:15px;
-                     }
-                  }
-               }
-            }
-            
          }
          .projects{
             display:none;

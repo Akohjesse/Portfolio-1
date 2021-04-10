@@ -18,7 +18,7 @@ body {
 }
 
 main {
-  margin: 40px 30px;
+  margin: 20px 30px;
   padding: 30px;
 }
 
@@ -112,9 +112,39 @@ main {
   font-size: 14px;
 }
 
+.section .static .portText .me button {
+  margin: 15px 0px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: inline-block;
+  height: 38px;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 38px;
+  outline: none;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: orange;
+  color: white;
+  white-space: nowrap;
+}
+
 .section .static .portText .sList {
   font-size: 15px;
-  margin: 20px 20px;
+  margin: 20px 0px;
+}
+
+.section .static .portText .sList img {
+  width: 60%;
+  margin: 5% 0px;
+  -webkit-box-shadow: 3px 4px 6px grey;
+          box-shadow: 3px 4px 6px grey;
 }
 
 .section .static .portText .sList li {
@@ -170,7 +200,7 @@ main {
 .section .dynamic header nav ul li {
   list-style-type: none;
   text-align: center;
-  padding: 2px 25px;
+  padding: 2px 30px;
   font-size: 16px;
 }
 
@@ -180,7 +210,7 @@ main {
 }
 
 .section .dynamic header nav ul li:nth-child(1) {
-  border-bottom: 3px solid #f192e9;
+  border-bottom: 3px solid orange;
   font-weight: 400;
 }
 
@@ -194,50 +224,7 @@ main {
 }
 
 .section .dynamic .blob .container {
-  padding: 40px 40px;
-}
-
-.section .dynamic .blob .container .skills h3 {
-  font-size: 16px;
-  padding: 10px;
-}
-
-.section .dynamic .blob .container .skills .hr {
-  width: 50%;
-  height: 1px;
-  background-color: #1c6cae;
-}
-
-.section .dynamic .blob .container .skills .skLi {
-  width: 100%;
-}
-
-.section .dynamic .blob .container .skills .skLi ul li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 20px;
-}
-
-.section .dynamic .blob .container .tools h3 {
-  font-size: 16px;
-  padding: 10px;
-}
-
-.section .dynamic .blob .container .tools .hr {
-  width: 50%;
-  height: 1px;
-  background-color: #1c6cae;
-}
-
-.section .dynamic .blob .container .tools .toLi ul li {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: 10px 10px;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  font-size: 15px;
+  padding: 40px 0px;
 }
 
 .section .dynamic .blob .projects {
