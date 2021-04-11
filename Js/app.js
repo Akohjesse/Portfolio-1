@@ -165,6 +165,7 @@ toggleDark.addEventListener("click", function() {
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";
 		};
+		document.querySelectorAll(".ri-menu-3-fill")[0].style = "color:black";
 		document.querySelectorAll(".view a").forEach(function(item) {
 			item.style.color = "#262626";
 			
@@ -232,9 +233,10 @@ secondBtn.addEventListener("click", ()=>{
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";
 		};
+		document.querySelectorAll(".ri-menu-3-fill")[0].style = "color:black";
 		document.querySelectorAll(".view a").forEach(function(item) {
 			item.style.color = "#262626";
-			document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "black";
+			
 			if (sessionStorage.getItem("check") === null) {
 				var check = false;
 				sessionStorage.setItem("check", JSON.stringify("check"));
