@@ -25,6 +25,7 @@
     <title>Hire Me</title>
 </head>
 <body>
+    <div class="divette"></div>
     <header class="tlspkpk">
         <div class="logo">
            <h4><span class="coloredTxt">Fervent Dev</span></h4>
@@ -61,7 +62,7 @@
             <h4>Contact Me</h4>
             <p>Have a project in mind? I am available for work. Want to collaborate on a project, or as a team? easily reach me on <a class="coloredTxt" href="https://twitter.com/Jesseakoh">Twitter</a> if urgent? just send me a <a class="coloredTxt" href="tel:09010824363">Text</a> </p>
 
-            <form action="">
+            <form name="contact" netlify>
                 <input  required type="text" placeholder="Fullname">
                 <br>
                 <input   required type="email" placeholder="Email">
@@ -95,18 +96,17 @@
 const toggleNav = document.querySelectorAll(".ri-menu-3-fill")[0].addEventListener("click", openMenu);
 var jesse = true;
 
-
+var divette = document.querySelector(".divette");
 
 function setLS() {
 	var check = JSON.parse(sessionStorage.getItem("check"));
 	if (check === "true") {
 		darkmode = true;
         var input = document.querySelectorAll('input');
-        input.classList.toggle('bg-e');
 		$('.tlspkpk').css({'background-color':`#262626`})
 		$('#hire').css({'background': `${purple}`})
 		body.style = "background:#262626; color:white; transition: 1.3s;";
-		
+        divette.style = "background-color:rgb(4,4,4);";
 		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
 		toggleDark.style = "color:rgb(250, 216, 78); ";
 	
@@ -177,6 +177,7 @@ var body = document.getElementsByTagName("body")[0];
 var secondBtn = document.querySelectorAll('#green')[1];
 
 var flag = true;
+
 let darkmode;
 toggleDark.addEventListener("click", function() {
     var input = document.querySelectorAll('input');
@@ -189,7 +190,7 @@ toggleDark.addEventListener("click", function() {
 		$('.tlspkpk').css({'background-color':`#262626`})
 		$('#hire').css({'background': `${purple}`})
 		body.style = "background:#262626; color:white; transition: 1.3s;";
-		
+        divette.style = "background-color:rgb(4,4,4);";
 		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
 		toggleDark.style = "color:rgb(250, 216, 78);";
 		
@@ -212,7 +213,7 @@ toggleDark.addEventListener("click", function() {
 		$('.tlspkpk').css({'background-color':``})
 		$('#hire').css({'background': ``})
 		body.style = "background:white";
-		
+		divette.style = "background-color: rgb(173, 182, 215)";
 		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 		toggleDark.style = "color:#f7f159;";
 		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
@@ -232,28 +233,22 @@ toggleDark.addEventListener("click", function() {
 });
 
 secondBtn.addEventListener("click", ()=>{
+    var input = document.querySelectorAll('input');
+    input.forEach(item => {
+       item.classList.toggle('bg-e');
+    })
 	if (flag) {
 		darkmode = true;
 		$('.tlspkpk').css({'background-color':`#262626`})
 		$('#hire').css({'background': `${purple}`})
 		body.style = "background:#262626; color:white; transition: 1.3s;";
-		blob.style = "color:white;";
+
 		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
 		toggleDark.style = "color:rgb(250, 216, 78);";
-		divette.style = "background-color:rgb(4,4,4);";
 		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
 			individual.style = "color:rgb(173, 182, 215)";
 		});
-		document.querySelector(".jam-up").style.color = "rgb(173, 182, 215)";
-		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:orange";
-		});
-		for (i = 0; i < projectChild; i++) {
-			document.querySelectorAll(".project-child")[i].style = "box-shadow: rgb(4 4 4) 2px 1px 6px 1px";
-		};
-		document.querySelectorAll(".view a").forEach(function(item) {
-			item.style.color = "white";
-		});
+
 		document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "white";
 		if (sessionStorage.getItem("check") === null) {
 			var check = "true";
@@ -268,6 +263,7 @@ secondBtn.addEventListener("click", ()=>{
 		$('.tlspkpk').css({'background-color':``})
 		$('#hire').css({'background': ``})
 		body.style = "background:white";
+        divette.style = "background-color: rgb(173, 182, 215)";
 		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 		toggleDark.style = "color:#f7f159;";
 		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
@@ -290,7 +286,7 @@ secondBtn.addEventListener("click", ()=>{
 
 
 document.querySelector('#hire').addEventListener('click', (e)=>{
-  e.preventDefault();y
+  e.preventDefault();
   document.querySelector('form').reset();
 })
        </script>
