@@ -233,6 +233,7 @@ toggleDark.addEventListener("click", function() {
 });
 
 secondBtn.addEventListener("click", ()=>{
+    document.querySelector('textarea').classList.toggle('bg-e');
     var input = document.querySelectorAll('input');
     input.forEach(item => {
        item.classList.toggle('bg-e');
