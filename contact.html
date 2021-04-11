@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Jesse Akoh" >
+    <meta name="description" content="Hire me, free for work">
+    <meta name='apple-touch-fullscreen' content='yes'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" href="Images/boy_stolen.png">
+    <meta name="theme-color" content="white"/>
+    <meta name='target' content='all'>
+    <link rel="icon" type="image/x-icon" href="Images/boy_stolen.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Css/contact.css">
+    <link rel="stylesheet" href="Css/Ast.css">
+    <link rel="stylesheet" href="Css/main.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  
+    <title>Hire Me</title>
+</head>
+<body>
+    <header class="tlspkpk">
+        <div class="logo">
+           <h4><span class="coloredTxt">Fervent Dev</span></h4>
+        </div>
+           <div class="toggle">
+                 <i id="green" class="ri-moon-fill animate__animated animate__fadeInDown "></i>
+           </div>
+           <div class="menu">
+              <i class="ri-menu-3-fill"></i>
+           </div>
+     </header>
+     <div class="remote">
+        <i id="green" class="ri-moon-fill animate__animated animate__fadeInDown "></i>
+  </div>
+     <div class="menu-bar animate__animated animate_fadeOutLeft animate__slideInRight">
+        <ul>
+           <li class="animate__animated animate__slideInRight" id="home_btn"> <a href="index.html">Home</a></li>
+           <li class="animate__animated animate__slideInLeft"><a href="stack.html">Stack</a></li>
+           <li  class="animate__animated animate__slideInRight"><a href="Projects.html">  Projects</a></li>
+           <li class="animate__animated animate__slideInLeft"><a href="https://drive.google.com/file/d/1Kcmp7dZRMdjPQw6Y1DV4h5C65xuFcSYk/view?usp=sharing">Resume</a></li>
+           <li  class="animate__animated animate__slideInRight"> <a href="https://dev.to/jesseakoh">I Write Tech stuff</a></li>
+        </ul>
+     
+        <div class="socials animate__animated animate__slideInLeft animate__delay-1s>
+           <a target="_blank" href="mailto:akohgodwinjesse@gmail.com"><i style="color:#e62b2b;" class="far fa-envelope"></i></a>
+           <a target="_blank" href="https://twitter.com/jesseakoh"><i  style="color:#1c6cae;" class="fab fa-twitter-square"></i></a> 
+           <a target="_blank" href="https://github.com/Akohjesse"> <i style="color:white" class="fab fa-github"></i></a> 
+           <a target="_blank" href="https://dev.to/jesseakoh"></a><i  class="fab fa-dev"></i></a> 
+        </div>
+     </div>
+
+    <div class="container">
+        
+            <h4>Contact Me</h4>
+            <p>Have a project in mind? I am available for work. Want to collaborate on a project, or as a team? easily reach me on <a class="coloredTxt" href="https://twitter.com/Jesseakoh">Twitter</a> if urgent? just send me a <a class="coloredTxt" href="tel:09010824363">Text</a> </p>
+
+            <form action="">
+                <input  required type="text" placeholder="Fullname">
+                <br>
+                <input   required type="email" placeholder="Email">
+                <br>
+                <input  required type="number" placeholder="Phone number (optional)">
+                <br>
+                <textarea class="textarea" name="info" id="message" cols="30" placeholder="Send me a message" rows="10"></textarea>
+                <br>
+                <button id="hire">Submit</button>
+            </form>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.min.js" integrity="sha512-QABeEm/oYtKZVyaO8mQQjePTPplrV8qoT7PrwHDJCBLqZl5UmuPi3APEcWwtTNOiH24psax69XPQtEo5dAkGcA==" crossorigin="anonymous"></script>
+       <script>
+
+           window.addEventListener('load', ()=>{
+               setLS();
+           })
+           var purple = 'rgb(173, 182, 215)';
+           $(document).ready(()=>{
+	           $('.tlspkpk').sticky({
+		          topSpacing:0,
+		          center:true,
+		          zIndex:92
+	           });
+	
+            });
+
+
+const toggleNav = document.querySelectorAll(".ri-menu-3-fill")[0].addEventListener("click", openMenu);
+var jesse = true;
+
+
+
+function setLS() {
+	var check = JSON.parse(sessionStorage.getItem("check"));
+	if (check === "true") {
+		darkmode = true;
+        var input = document.querySelectorAll('input');
+        input.classList.toggle('bg-e');
+		$('.tlspkpk').css({'background-color':`#262626`})
+		$('#hire').css({'background': `${purple}`})
+		body.style = "background:#262626; color:white; transition: 1.3s;";
+		
+		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
+		toggleDark.style = "color:rgb(250, 216, 78); ";
+	
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+			individual.style = "color:rgb(173, 182, 215)";
+		});
+	
+
+		document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "white";
+		if (sessionStorage.getItem("check") === null) {
+			var check = "true";
+			sessionStorage.setItem("check", JSON.stringify("check"));
+		} else {
+			var check = JSON.parse(sessionStorage.getItem("check"));
+			check = "true";
+			sessionStorage.setItem("check", JSON.stringify(check));
+		}
+	} else {
+		darkmode = false;
+		$('.tlspkpk').css({'background-color':''})
+		$('#hire').css({'background': ``})
+		body.style = "background:white";
+		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
+		toggleDark.style = "color:#f7f159; ";
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+			individual.style = "color:orange";
+		});
+	
+			document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "black";
+			if (sessionStorage.getItem("check") === null) {
+				var check = false;
+				sessionStorage.setItem("check", JSON.stringify("check"));
+			} else {
+				var check = JSON.parse(sessionStorage.getItem("check"));
+				check = "false";
+				sessionStorage.setItem("check", JSON.stringify(check));
+			}
+	}
+}
+
+
+
+
+function openMenu() {
+	if (jesse) {
+		var menuBar = document.querySelector(".menu-bar");
+		$('.container_full').css({'overflow':'hidden'});
+		menuBar.style.display = "flex";
+		this.style.color = "white";
+		this.className = "ri-close-line";
+	} else {
+		var menuBar = document.querySelector(".menu-bar");
+		menuBar.style.display = "none";
+		$('.container_full').css({'overflow':''});
+		if (!darkmode) {
+			this.style.color = "black";
+		} else {
+			this.style.color = "white";
+		};
+		this.className = "ri-menu-3-fill";
+	}
+	jesse = !jesse;
+}
+
+
+var toggleDark = document.querySelectorAll("#green")[0];
+var body = document.getElementsByTagName("body")[0];
+var secondBtn = document.querySelectorAll('#green')[1];
+
+var flag = true;
+let darkmode;
+toggleDark.addEventListener("click", function() {
+    var input = document.querySelectorAll('input');
+    input.forEach(item => {
+       item.classList.toggle('bg-e');
+    })
+    document.querySelector('textarea').classList.toggle('bg-e');
+	if (flag) {
+		darkmode = true;
+		$('.tlspkpk').css({'background-color':`#262626`})
+		$('#hire').css({'background': `${purple}`})
+		body.style = "background:#262626; color:white; transition: 1.3s;";
+		
+		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
+		toggleDark.style = "color:rgb(250, 216, 78);";
+		
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+			individual.style = "color:rgb(173, 182, 215)";
+		});
+		
+       
+		document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "white";
+		if (sessionStorage.getItem("check") === null) {
+			var check = "true";
+			sessionStorage.setItem("check", JSON.stringify("check"));
+		} else {
+			var check = JSON.parse(sessionStorage.getItem("check"));
+			check = "true";
+			sessionStorage.setItem("check", JSON.stringify(check));
+		}
+	} else {
+		darkmode = false;
+		$('.tlspkpk').css({'background-color':``})
+		$('#hire').css({'background': ``})
+		body.style = "background:white";
+		
+		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
+		toggleDark.style = "color:#f7f159;";
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+			individual.style = "color:orange";
+		});
+		document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "black";
+			if (sessionStorage.getItem("check") === null) {
+				var check = false;
+				sessionStorage.setItem("check", JSON.stringify("check"));
+			} else {
+				var check = JSON.parse(sessionStorage.getItem("check"));
+				check = "false";
+				sessionStorage.setItem("check", JSON.stringify(check));
+			}
+	}
+	flag = !flag;
+});
+
+secondBtn.addEventListener("click", ()=>{
+	if (flag) {
+		darkmode = true;
+		$('.tlspkpk').css({'background-color':`#262626`})
+		$('#hire').css({'background': `${purple}`})
+		body.style = "background:#262626; color:white; transition: 1.3s;";
+		blob.style = "color:white;";
+		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
+		toggleDark.style = "color:rgb(250, 216, 78);";
+		divette.style = "background-color:rgb(4,4,4);";
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+			individual.style = "color:rgb(173, 182, 215)";
+		});
+		document.querySelector(".jam-up").style.color = "rgb(173, 182, 215)";
+		document.querySelectorAll(".stack code ul li").forEach(function(item) {
+			item.style = "color:orange";
+		});
+		for (i = 0; i < projectChild; i++) {
+			document.querySelectorAll(".project-child")[i].style = "box-shadow: rgb(4 4 4) 2px 1px 6px 1px";
+		};
+		document.querySelectorAll(".view a").forEach(function(item) {
+			item.style.color = "white";
+		});
+		document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "white";
+		if (sessionStorage.getItem("check") === null) {
+			var check = "true";
+			sessionStorage.setItem("check", JSON.stringify("check"));
+		} else {
+			var check = JSON.parse(sessionStorage.getItem("check"));
+			check = "true";
+			sessionStorage.setItem("check", JSON.stringify(check));
+		}
+	} else {
+		darkmode = false;
+		$('.tlspkpk').css({'background-color':``})
+		$('#hire').css({'background': ``})
+		body.style = "background:white";
+		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
+		toggleDark.style = "color:#f7f159;";
+		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
+			individual.style = "color:orange";
+		});
+	
+			document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "black";
+			if (sessionStorage.getItem("check") === null) {
+				var check = false;
+				sessionStorage.setItem("check", JSON.stringify("check"));
+			} else {
+				var check = JSON.parse(sessionStorage.getItem("check"));
+				check = "false";
+				sessionStorage.setItem("check", JSON.stringify(check));
+			}
+	}
+	flag = !flag;
+});
+
+
+
+document.querySelector('#hire').addEventListener('click', (e)=>{
+  e.preventDefault();y
+  document.querySelector('form').reset();
+})
+       </script>
+</body>
+</html>

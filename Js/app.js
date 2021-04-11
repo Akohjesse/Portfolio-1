@@ -14,9 +14,10 @@ $(document).ready(()=>{
 	$('.tlspkpk').sticky({
 		topSpacing:0,
 		center:true,
-		zIndex:92,
-	})
-})
+		zIndex:92
+	});
+	
+});
 
 
 function setLS() {
@@ -113,7 +114,7 @@ var articlePost = document.querySelectorAll(".post").length;
 var flag = true;
 var divette = document.querySelector(".divette");
 let darkmode;
-toggleDark.addEventListener("click", function turnOn() {
+toggleDark.addEventListener("click", function() {
 	if (flag) {
 		darkmode = true;
 		$('.tlspkpk').css({'background-color':`#262626`})
@@ -166,7 +167,7 @@ toggleDark.addEventListener("click", function turnOn() {
 		};
 		document.querySelectorAll(".view a").forEach(function(item) {
 			item.style.color = "#262626";
-			document.querySelectorAll(".ri-menu-3-fill")[0].style.color = "black";
+			
 			if (sessionStorage.getItem("check") === null) {
 				var check = false;
 				sessionStorage.setItem("check", JSON.stringify("check"));
@@ -244,6 +245,7 @@ secondBtn.addEventListener("click", ()=>{
 			}
 		})
 	}
+	flag = !flag;
 });
 
 
