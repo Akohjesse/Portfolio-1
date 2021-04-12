@@ -28,6 +28,8 @@ function setLS() {
 		$('#hire').css({'background': `${purple}`})
 		body.style = "background:#262626; color:white; transition: 1.3s;";
 		blob.style = "color:white;";
+		secondBtn.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
+		secondBtn.style = "color:rgb(250, 216, 78); ";
 		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
 		toggleDark.style = "color:rgb(250, 216, 78); ";
 		divette.style = "background-color:rgb(4,4,4);";
@@ -36,7 +38,7 @@ function setLS() {
 		});
 		document.querySelector(".jam-up").style.color = "rgb(173, 182, 215)";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:orange";
+			item.style = "color:rgb(173, 182, 215)";
 		});
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow: rgb(4 4 4) 2px 1px 6px 1px";
@@ -60,6 +62,8 @@ function setLS() {
 		body.style = "background:white";
 		blob.style = "background:white;";
 		divette.style = "background-color: rgb(173, 182, 215)";
+		secondBtn.className = "ri-moon-fill animate__animated animate__fadeInDown";
+		secondBtn.style = "color:#f7f159; ";
 		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
 		toggleDark.style = "color:#f7f159; ";
 		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
@@ -67,7 +71,7 @@ function setLS() {
 		});
 		document.querySelector(".jam-up").style.color = "orange";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:rgb(173, 182, 215)";
+			item.style = "color:orange";
 		});
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";
@@ -129,7 +133,7 @@ toggleDark.addEventListener("click", function() {
 		});
 		document.querySelector(".jam-up").style.color = "rgb(173, 182, 215)";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:orange";
+			item.style = "color:rgb(173, 182, 215)";
 		});
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow: rgb(4 4 4) 2px 1px 6px 1px";
@@ -160,7 +164,7 @@ toggleDark.addEventListener("click", function() {
 		});
 		document.querySelector(".jam-up").style.color = "orange";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:rgb(173, 182, 215)";
+			item.style = "color:orange";
 		});
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";
@@ -189,15 +193,15 @@ secondBtn.addEventListener("click", ()=>{
 		$('#hire').css({'background': `${purple}`})
 		body.style = "background:#262626; color:white; transition: 1.3s;";
 		blob.style = "color:white;";
-		toggleDark.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
-		toggleDark.style = "color:rgb(250, 216, 78);";
+		secondBtn.className = "ri-sun-fill animate__animated animate__fadeInUp animate__slow";
+		secondBtn.style = "color:rgb(250, 216, 78);";
 		divette.style = "background-color:rgb(4,4,4);";
 		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
 			individual.style = "color:rgb(173, 182, 215)";
 		});
 		document.querySelector(".jam-up").style.color = "rgb(173, 182, 215)";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:orange";
+			item.style = "color:rgb(173, 182, 215)";
 		});
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow: rgb(4 4 4) 2px 1px 6px 1px";
@@ -221,14 +225,14 @@ secondBtn.addEventListener("click", ()=>{
 		body.style = "background:white";
 		blob.style = "background:white;";
 		divette.style = "background-color: rgb(173, 182, 215)";
-		toggleDark.className = "ri-moon-fill animate__animated animate__fadeInDown";
-		toggleDark.style = "color:#f7f159;";
+		secondBtn.className = "ri-moon-fill animate__animated animate__fadeInDown";
+		secondBtn.style = "color:#f7f159;";
 		document.querySelectorAll(".coloredTxt").forEach(function(individual) {
 			individual.style = "color:orange";
 		});
 		document.querySelector(".jam-up").style.color = "orange";
 		document.querySelectorAll(".stack code ul li").forEach(function(item) {
-			item.style = "color:rgb(173, 182, 215)";
+			item.style = "color:orange";
 		});
 		for (i = 0; i < projectChild; i++) {
 			document.querySelectorAll(".project-child")[i].style = "box-shadow:2px 3px 6px rgb(214, 212, 212)";

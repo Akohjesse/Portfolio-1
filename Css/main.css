@@ -210,7 +210,7 @@ main {
 }
 
 .section .dynamic header nav ul li:nth-child(1) {
-  border-bottom: 3px solid orange;
+  border-bottom: 3px solid #a7a6a5;
   font-weight: 400;
 }
 
@@ -260,7 +260,6 @@ main {
 .section .dynamic .blob .projects .project-child .stack code ul li {
   display: inline;
   padding: 4px;
-  color: #f192e9;
 }
 
 .section .dynamic .blob .projects .project-child .view a {

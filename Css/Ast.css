@@ -19,7 +19,7 @@
 }
 .remote i{
      font-size:60px;
-     color:rgb(250, 216, 78)
+     color:rgb(250, 216, 78);
  }
  .redriding{
      color:inherit;
@@ -71,7 +71,7 @@
      }
      .remote i{
          font-size:50px;
-         color:orange;
+         color:rgb(250, 216, 78);
      }
  }
  @media  (min-width:768px) and (max-width:800px){
@@ -82,7 +82,7 @@
      }
      .remote i{
          font-size:50px;
-         color:orange;
+         color:rgb(250, 216, 78);
      }
  }
  @media (max-width:765px){
@@ -91,7 +91,7 @@
      }
      .toggle i{
          font-size:35px;
-         color:orange;
+         color:rgb(250, 216, 78);
      }
      .tlspkpk{
          display:flex;
@@ -150,7 +150,7 @@
      }
      .moon i{
          font-size:30px;
-         color:orange;
+         color:rgb(250, 216, 78);
      }
 
  }
