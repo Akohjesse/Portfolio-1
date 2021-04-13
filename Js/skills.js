@@ -73,12 +73,14 @@ function autoColor() {
 	function openMenu() {
 		if (jesse) {
 			var menuBar = document.querySelector(".menu-bar");
+				$('.container_full').css({'overflow':'hidden'});
 			menuBar.style.display = "flex";
 			this.style.color = "white";
 			this.className = "ri-close-line";
 		} else {
 			var menuBar = document.querySelector(".menu-bar");
 			menuBar.style.display = "none";
+			$('.container_full').css({'overflow':''});
 			if (!darkmode) {
 				this.style.color = "black";
 			} else {
