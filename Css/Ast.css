@@ -106,6 +106,9 @@
          font-size:1.2em;
          transition:ease-in 0.3s;
      }
+     .logo h4 a {
+         text-decoration: none;
+     }
       .menu{
         z-index:100;
          font-size:1.4em;

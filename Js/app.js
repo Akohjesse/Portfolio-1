@@ -8,7 +8,7 @@ function preloader() {
 }
 
 
-var purple = 'rgb(173, 182, 215)';
+var purple = 'rgb(173, 182, 215)';134
 
 $(document).ready(()=>{
 	$('.tlspkpk').sticky({
