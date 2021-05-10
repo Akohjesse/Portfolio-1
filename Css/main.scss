@@ -36,7 +36,7 @@ main{
    top:0;
    display:none;
    flex-direction:column;
-   background:rgb(40, 41, 43);
+   background:rgb(29, 33, 43);
    ul{
       align-self:center;
       margin:20%;
@@ -66,6 +66,7 @@ main{
 .section{
    display:flex;
    justify-content: space-between;
+   flex-direction: row;
    
    .static{
       align-content: center;
@@ -83,6 +84,9 @@ main{
       }
       
       .portText{
+         .beginTxt{
+            margin:20px 0px;
+         }
          h1{
             padding: 20px  0px ;
             font-size:2em;
@@ -92,6 +96,9 @@ main{
             font-size:14px;
          }
          .me{
+            p{
+               line-height: 25px;
+            }
             button{
                margin:15px 0px;
                border-radius: 4px;
@@ -120,7 +127,6 @@ main{
            img{
               width:60%;
           margin:5% 0px;
-          box-shadow: 3px 4px 6px grey;
            }
            li{
               list-style-type: armenian;
@@ -207,8 +213,14 @@ main{
             
             .project-child{
                .proj-img{
-                  img{
+                  .sub{
                      width:100%;
+                     height:80px;
+                     border-radius: 5px;
+                     background:linear-gradient(right, orange, salmon);
+                     text-align: center;
+                     margin-bottom:2%;
+                    
                   }
                }
               padding:9px;
@@ -474,7 +486,7 @@ main{
             font-size: 16px;
          }
          margin:5% 0;
-         line-height:27px ;
+         line-height:35px ;
          text-align: center;
          button{
             margin:15px 0px;
@@ -507,7 +519,6 @@ main{
     img{
        text-align: center;
        width:98%;
-       box-shadow: 3px 4px  5px rgb(135, 134, 132);
     }
     font-size:16px;
     line-height: 30px;

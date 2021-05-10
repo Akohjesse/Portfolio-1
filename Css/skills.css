@@ -19,7 +19,7 @@ body {
 
 .containment {
   width: 95%;
-  margin: 4% auto;
+  margin: 10% auto;
 }
 
 .containment .build p {
@@ -48,6 +48,10 @@ body {
   font-size: 1.3em;
   border-right: 2px dotted orange;
   border-bottom: 2px solid orange;
+}
+
+.containment .trad {
+  margin-top: 20px;
 }
 
 .containment .trad p {

@@ -44,19 +44,20 @@
     overflow:hidden;
     display:flex;
     justify-content: center;
-    background-color:#262626;
+    background-color:#a9650c;
 }
 .txtdeep{
         margin:10% 0px;
         text-align: center;
 }
-.txtdeep img{
-    border-radius: 50%;
-    width:50%;
+.img{
+    display: flex;
+    margin:2% auto;
 }
-.txtdeep q{
+.txtdeep p{
     text-align: center;
     color:white;
+    font-size: 1.2em;
     padding:0 4%;
 }
 /* 
@@ -106,7 +107,7 @@
          font-size:1.2em;
          transition:ease-in 0.3s;
      }
-     .logo h4 a {
+     .logo  a {
          text-decoration: none;
      }
       .menu{
@@ -130,7 +131,7 @@
         overflow:hidden;
         display:flex;
         justify-content: center;
-        background-color:#262626;
+        background-color:#242323;
     }
     .txtdeep{
             margin:45% 0px;
@@ -140,7 +141,7 @@
         border-radius: 50%;
         width:50%;
     }
-    .txtdeep q{
+    .txtdeep p{
         text-align: center;
         color:white;
         padding:0 4%;
