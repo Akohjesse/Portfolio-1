@@ -33,10 +33,6 @@ body {
   margin: 10% auto;
 }
 
-.projects .proj-img img {
-  width: 100%;
-}
-
 .projects .project-child {
   margin: 5% 10px;
   padding: 20px;
@@ -72,6 +68,18 @@ body {
 .projects .project-child .view a {
   padding: 5px 6px;
   color: #262626;
+}
+
+.more {
+  width: 50%;
+  margin: 15% auto;
+  border: 1px solid orange;
+  padding: 20px;
+}
+
+.more p a {
+  text-decoration: none;
+  color: orange;
 }
 
 @media (max-width: 400px) {
