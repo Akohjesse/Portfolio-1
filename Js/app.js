@@ -2,7 +2,7 @@
 function preloader() {
 	setTimeout(funct =>{
 		document.querySelector('.loader').classList.add('animate__fadeOutRight')
-	}, 3000)
+	}, 2000)
 	
 	setLS();
 }
