@@ -100,7 +100,7 @@ main{
                line-height: 25px;
             }
             button{
-               margin:15px 0px;
+               margin:20px 0px;
                border-radius: 4px;
                cursor: pointer;
                border:none;
@@ -126,10 +126,14 @@ main{
            margin:20px 0px;
            img{
               width:60%;
-          margin:5% 0px;
+              margin:5% 0px;
            }
            li{
               list-style-type: armenian;
+              margin:2% auto;
+           }
+           h3{
+              margin-bottom:12px;
            }
         }
         .moreTxt{

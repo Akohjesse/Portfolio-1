@@ -105,7 +105,7 @@ body {
     border-radius: 20px;
   }
   .containment .build .jamstack .divs p {
-    font-size: 1.3em;
+    font-size: 1em;
     border-right: 2px dotted orange;
     border-bottom: 2px solid orange;
   }
@@ -129,7 +129,7 @@ body {
     border-radius: 10px;
   }
   .containment .trad .divs .item p {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 /*# sourceMappingURL=skills.css.map */

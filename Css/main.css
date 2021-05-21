@@ -125,7 +125,7 @@ main {
 }
 
 .section .static .portText .me button {
-  margin: 15px 0px;
+  margin: 20px 0px;
   border-radius: 4px;
   cursor: pointer;
   border: none;
@@ -159,6 +159,11 @@ main {
 
 .section .static .portText .sList li {
   list-style-type: armenian;
+  margin: 2% auto;
+}
+
+.section .static .portText .sList h3 {
+  margin-bottom: 12px;
 }
 
 .section .static .portText .moreTxt {
